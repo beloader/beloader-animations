@@ -1,0 +1,49 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "includes": ["\\.js|\\.jsdoc$"],
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "test": {
+          "source": "./tastes/tests/"
+        },
+        "brand": {
+          "logo": "./docs/assets/logo.png",
+          "title": "BeLoader | Highly customizable and lightweight loader based on dynamic imports with splash screen, animated blocks and more"
+        },
+        "manual": {
+          "index": "./docs/manual/md/index.md",
+          "files": [
+            "./docs/manual/md/installation.md",
+            "./docs/manual/md/basic.md",
+            "./docs/manual/md/loaders.md",
+            "./docs/manual/md/events.md",
+            "./docs/manual/md/plugins.md"
+          ]
+        }
+      }
+    },
+    {
+      "name": "esdoc-inject-style-plugin",
+      "option": {
+        "enable": true,
+        "styles": ["./docs/assets/styles.css"]
+      }
+    },
+    {
+      "name": "esdoc-inject-script-plugin",
+      "option": {
+        "enable": true,
+        "scripts": ["./docs/assets/docs.js"]
+      }
+    },
+    {
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": {
+        "all": true
+      }
+    }
+  ]
+}
