@@ -5,7 +5,7 @@
 */
 
 export {Q} from 'elementify';
-import anime from 'animejs';
+import animejs from 'animejs';
 import ThreeDotsBouncing from 'animations/blocks/ThreeDotsBouncing';
 import BackgroundColor from 'animations/colors/BackgroundColor';
 
