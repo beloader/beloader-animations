@@ -1,0 +1,50 @@
+<html>
+<head>Animation Beloader plugin Example</head>
+<body style="background-color:#000">
+  <style>
+    .loading {
+      font-family: 'Droid Sans';
+      font-size: 2em;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 2em;
+      text-transform: uppercase
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/beloader@latest/dist/beloader.min.js"></script>
+  <script type="text/javascript">
+    var loader = new Beloader({
+      defer: true
+    });
+    
+    loader.fetch('plugin', {
+      name: 'animations',
+      url: 'https://cdn.rawgit.com/beloader/beloader-animations/2e01ef79/dist/beloader-animations.min.js'
+    }).promise.then(function() {
+      var bgcolor = new this.animations.colors.BackgroundColor({
+        targets: 'body',
+        from: '#000',
+        to: '#09c'
+      }).start();
+      
+      var dots = new this.animations.blocks.ThreeDotsBouncing();
+      
+      Q('body').style('backgroundColor', '#000');
+      Q('body').append(dots.block);
+      dots.block.width = '30%';
+      dots.start();
+    },
+    (err) => console.log(err));
+    
+    loader.fetch('font', {
+      webfont: {
+        google: {
+          families: ['Droid Sans', 'Droid Serif']
+        }
+      }
+    }).promise.then(function(item) {
+      Q('body').append('<div class="loading">Loading in progress</div>');
+    });
+  </script>
+</body>
