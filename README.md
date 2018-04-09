@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/beloader/beloader-animations.svg?branch=master)](https://travis-ci.org/beloader/beloader-animations)
 [![Coverage Status](https://coveralls.io/repos/github/beloader/beloader-animations/badge.svg?branch=master)](https://coveralls.io/github/beloader/beloader-animations?branch=master)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![Documentation](https://beloader-animations.github.io/beloader-animations/badge.svg)](https://beloader-animations.github.io/beloader-animations/)
+[![Documentation](https://beloader.github.io/beloader-animations//badge.svg)](https://beloader.github.io/beloader-animations/)
 
 [![bitHound Overall Score](https://www.bithound.io/github/beloader/beloader-animations/badges/score.svg)](https://www.bithound.io/github/beloader/beloader-animations)
 [![bitHound Code](https://www.bithound.io/github/beloader/beloader-animations/badges/code.svg)](https://www.bithound.io/github/beloader/beloader-animations)
@@ -55,7 +55,7 @@ That example will load Beloader from CDN, then load plugin and font and finally 
 
     loader.fetch('plugin', {
       name: 'animations',
-      url: 'https://cdn.rawgit.com/beloader/beloader-animations/2e01ef79/dist/beloader-animations.min.js'
+      url: 'https://cdn.rawgit.com/beloader/beloader-animations/ffa73da1/dist/beloader-animations.min.js'
     }).promise.then(function() {
       this.animations.load('BackgroundColor', function(BackgroundColor) {
         var a = new BackgroundColor({
