@@ -1,10 +1,10 @@
 const Beloader = window.Beloader;
 const loader = new Beloader();
+var BackgroundColor;
 
-// import BackgroundColor from 'animations/BackgroundColor';
 import animations from 'beloader-animations';
 
-describe('BackgroundColor', function () {
+describe.skip('BackgroundColor', function () {
   this.timeout(5000);
 
   it('should load BackgroundColor', function (done) {
@@ -12,6 +12,7 @@ describe('BackgroundColor', function () {
 
     a.promise.then(() => {
       loader.animations.load('BackgroundColor').then(a => {
+        BackgroundColor = a;
         a.name.should.equal('BackgroundColor');
         done();
       });

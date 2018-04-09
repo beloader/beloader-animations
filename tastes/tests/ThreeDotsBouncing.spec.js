@@ -13,7 +13,6 @@ describe('ThreeDotsBouncing', function () {
     a.promise.then(() => {
       loader.animations.load('ThreeDotsBouncing').then(a => {
         ThreeDotsBouncing = a;
-
         a.name.should.equal('ThreeDotsBouncing');
         done();
       });

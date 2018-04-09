@@ -56,14 +56,13 @@
 
 <p></p>
 <h1 id="beloader-animations">beloader-animations</h1><p>Beloader animations is a plugin for Beloader.</p>
-<p>It loads <a href="https://github.com/liqueurdetoile/elementify">Elementify</a> for easy DOM
+<p>It loads <a href="https://github.com/liqueurdetoile/elementify">Elementify</a> for lightweight easy DOM
 mangagement and bundles the great
 <a href="https://github.com/juliangarnier/anime">anime.js</a> from Julian Garnier to support
-custom animations.</p>
-<p>It provides some presets for displaying animated blocks, anime background colors...</p>
+animations.</p>
+<p>It also provides some presets for displaying animated blocks, anime background colors... that may grow other time.</p>
 <h2 id="installation">Installation</h2><h3 id="in-browser">In browser</h3><p>For usage in browser, no installation is required. Simply load plugin with <a href="https://beloader.github.io/beloader/manual/plugins.html">Beloader</a>.</p>
-<p>That example will load Beloader from CDN, then load plugin and font and finally display animated block
-and loading message without FOUT effect.</p>
+<p>That example will load Beloader from CDN, then load plugin and font and finally display animated block and loading message without FOUT effect.</p>
 <pre><code class="lang-html"><code class="source-code prettyprint">&lt;html&gt;
 &lt;head&gt;Animation Beloader plugin Example&lt;/head&gt;
 &lt;body style=&quot;background-color:#000&quot;&gt;
@@ -88,11 +87,13 @@ and loading message without FOUT effect.</p>
       name: &apos;animations&apos;,
       url: &apos;https://cdn.rawgit.com/beloader/beloader-animations/2e01ef79/dist/beloader-animations.min.js&apos;
     }).promise.then(function() {
-      var bgcolor = new this.animations.colors.BackgroundColor({
-        targets: &apos;body&apos;,
-        from: &apos;#000&apos;,
-        to: &apos;#09c&apos;
-      }).start();
+      this.animations.load(&apos;BackgroundColor&apos;, function(BackgroundColor) {
+        var a = new BackgroundColor({
+          targets: &apos;body&apos;,
+          from: &apos;#000&apos;,
+          to: &apos;#09c&apos;
+        }).start();
+     });
 
       var dots = new this.animations.blocks.ThreeDotsBouncing();
 
@@ -116,7 +117,12 @@ and loading message without FOUT effect.</p>
 &lt;/body&gt;</code>
 </code></pre>
 <p>See a demo of this example : <a href="https://cdn.rawgit.com/beloader/beloader-animations/94619414/demos/example.html">https://cdn.rawgit.com/beloader/beloader-animations/94619414/demos/example.html</a></p>
-<h3 id="as-module">As module</h3><p>As Beloader, beloader-animations is available as UMD to be embedded in wider app. Simply install it :</p>
+<h3 id="as-module">As module</h3><p>As Beloader, beloader-animations is available as UMD to be embedded in wider app. Though, main beloader-animations is pretty useless as a module, each animation can be embedded separately :</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">import &apos;ThreeDotsBouncing&apos; from &apos;beloader-animations/dist/animations/ThreeDotsBouncing&apos;;
+//or
+const ThreeDotsBouncing = require(&apos;beloader-animations/dist/animations/ThreeDotsBouncing&apos;).default;</code>
+</code></pre>
+<p>Each animation expect Elementify and Anime to be already loaded as externals.</p>
 </div>
 </div>
 

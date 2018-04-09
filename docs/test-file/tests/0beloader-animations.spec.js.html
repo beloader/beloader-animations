@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">tests/Ripples.spec.js | BeLoader | Highly customizable and lightweight loader based on dynamic imports with splash screen, animated blocks and more</title>
+  <title data-ice="title">tests/0beloader-animations.spec.js | BeLoader | Highly customizable and lightweight loader based on dynamic imports with splash screen, animated blocks and more</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -40,54 +40,104 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">tests/Ripples.spec.js</h1>
+<div class="content" data-ice="content"><h1 data-ice="title">tests/0beloader-animations.spec.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const Beloader = window.Beloader;
 const loader = new Beloader();
-var Ripples;
 
 import animations from &apos;beloader-animations&apos;;
+import AbstractAnimation from &apos;core/AbstractAnimation&apos;;
 
-describe(&apos;Ripples&apos;, function () {
-  this.timeout(5000);
+describe(&apos;Main loader&apos;, function () {
+  this.timeout(10000);
 
-  it(&apos;should load Ripples&apos;, function (done) {
+  it(&apos;should load dependencies&apos;, function () {
     let a = loader.pluginize(&apos;animations&apos;, animations);
 
-    a.promise.then(() =&gt; {
-      loader.animations.load(&apos;Ripples&apos;).then(a =&gt; {
-        Ripples = a;
-
-        a.name.should.equal(&apos;Ripples&apos;);
-        done();
-      });
+    return a.promise.then(() =&gt; {
+      window.elementify.should.be.an(&apos;object&apos;);
+      window.anime.should.be.a(&apos;function&apos;);
     });
   });
 
-  it(&apos;should run Ripples without options&apos;, function () {
-    let a = new Ripples();
+  it(&apos;should not load dependencies&apos;, function () {
+    let b = loader.pluginize(&apos;b&apos;, animations, {
+      elementify: false,
+      anime: false
+    });
 
-    this.timeout(6000);
-    a.block.node.nodeName.should.equal(&apos;DIV&apos;);
-    a.start();
-    return a.animation.finished.then(() =&gt; {
-      a.animation.completed.should.be.true;
+    return b.promise.then(() =&gt; {
+      expect(true).to.be.true;
     });
   });
 
-  it(&apos;should run Ripples with options&apos;, function () {
-    let a = new Ripples({
-      duration: 500,
-      ripples: {
-        count: 1
-      }
+  it(&apos;should load animation and return promise&apos;, function (done) {
+    animations.load(&apos;Ripples&apos;).then(Ripples =&gt; {
+      let t = new Ripples();
+
+      t.block.node.nodeName.should.equal(&apos;DIV&apos;);
+      done();
+    });
+  });
+
+  it(&apos;should fail loading animation and return promise&apos;, function () {
+    return animations.load(&apos;Nothing&apos;)[&apos;catch&apos;](error =&gt; {
+      console.log(error);
+      expect(true).to.be.true;
+    });
+  });
+
+  it(&apos;should load animation and run callback&apos;, function (done) {
+    animations.load(&apos;Ripples&apos;, function (Ripples) {
+      let t = new Ripples();
+
+      t.block.node.nodeName.should.equal(&apos;DIV&apos;);
+      done();
+    });
+  });
+
+  it(&apos;should fail loading animation and run failure callback&apos;, function (done) {
+    animations.load(&apos;Nothing&apos;, null, error =&gt; {
+      console.log(error);
+      expect(true).to.be.true;
+      done();
+    });
+  });
+});
+
+describe(&apos;AbstractAnimation&apos;, function () {
+  it(&apos;should create an instance&apos;, function () {
+    let a = new AbstractAnimation();
+
+    a.block.should.be.false;
+  });
+
+  it(&apos;should store options&apos;, function () {
+    let a = new AbstractAnimation({
+      duration: 1000
     });
 
-    this.timeout(1000);
-    a.block.node.nodeName.should.equal(&apos;DIV&apos;);
-    a.start();
-    return a.animation.finished.then(() =&gt; {
-      a.animation.completed.should.be.true;
+    a.options.pull(&apos;duration&apos;).should.equal(1000);
+  });
+
+  it(&apos;should check option as string&apos;, function () {
+    let a = new AbstractAnimation({
+      duration: 1000,
+      fixture: false
     });
+
+    a.check(&apos;duration&apos;).should.be.true;
+    a.check(&apos;fixture&apos;).should.be.true;
+    expect(a.check.bind(a, &apos;nothing&apos;)).to.throw(TypeError);
+  });
+
+  it(&apos;should check option as array&apos;, function () {
+    let a = new AbstractAnimation({
+      duration: 1000,
+      fixture: false
+    });
+
+    a.check([&apos;duration&apos;]).should.be.true;
+    a.check([&apos;duration&apos;, &apos;fixture&apos;]).should.be.true;
   });
 });
 </code></pre>

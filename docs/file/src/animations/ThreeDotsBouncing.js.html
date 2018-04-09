@@ -79,6 +79,7 @@ export default class ThreeDotsBouncing extends AbstractAnimation {
   *  @author Liqueur de Toile &lt;contact@liqueurdetoile.com&gt;
   *
   *  @param {Object} options  Options for the animation
+  *  @param {boolean} [options.loop=true]
   *  @param {number}  [options.duration=3000]  Duration of the animation
   *  @param {number}  [options.offset=1000]  Offset duration between each dots animation
   *  @param {number}  [options.width=25%]  Width of the container (any CSS compatible value)
@@ -90,6 +91,7 @@ export default class ThreeDotsBouncing extends AbstractAnimation {
   constructor(options = {}) {
     super(options);
 
+    this.options.define(&apos;loop&apos;, true);
     this.options.define(&apos;duration&apos;, 3000);
     this.options.define(&apos;offset&apos;, 1000);
     this.options.define(&apos;width&apos;, &apos;25%&apos;);
@@ -162,7 +164,7 @@ export default class ThreeDotsBouncing extends AbstractAnimation {
   */
   start() {
     let timeline = anime.timeline({
-      loop: true,
+      loop: this.options.pull(&apos;loop&apos;),
       autoplay: true
     });
 

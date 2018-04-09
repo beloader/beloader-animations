@@ -30,8 +30,7 @@ It also provides some presets for displaying animated blocks, anime background c
 ### In browser
 For usage in browser, no installation is required. Simply load plugin with [Beloader](https://beloader.github.io/beloader/manual/plugins.html).
 
-That example will load Beloader from CDN, then load plugin and font and finally display animated block
-and loading message without FOUT effect.
+That example will load Beloader from CDN, then load plugin and font and finally display animated block and loading message without FOUT effect.
 
 ```html
 <html>

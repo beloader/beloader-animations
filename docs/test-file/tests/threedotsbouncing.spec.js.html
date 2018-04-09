@@ -50,15 +50,30 @@ import animations from &apos;beloader-animations&apos;;
 describe(&apos;ThreeDotsBouncing&apos;, function () {
   this.timeout(5000);
 
-  it(&apos;should load ThreeDotsBouncing&apos;, function () {
+  it(&apos;should load ThreeDotsBouncing&apos;, function (done) {
     let a = loader.pluginize(&apos;animations&apos;, animations);
 
-    return a.promise.then(() =&gt; {
+    a.promise.then(() =&gt; {
       loader.animations.load(&apos;ThreeDotsBouncing&apos;).then(a =&gt; {
         ThreeDotsBouncing = a;
-
         a.name.should.equal(&apos;ThreeDotsBouncing&apos;);
+        done();
       });
+    });
+  });
+
+  it(&apos;should run ThreeDotsBouncing with options&apos;, function () {
+    let a = new ThreeDotsBouncing({
+      loop: false,
+      duration: 1000,
+      offset: 100
+    });
+
+    this.timeout(2000);
+    a.block.node.nodeName.should.equal(&apos;DIV&apos;);
+    a.start();
+    return a.animation.finished.then(() =&gt; {
+      a.animation.completed.should.be.true;
     });
   });
 });
