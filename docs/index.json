@@ -1,0 +1,2244 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/animations/BackgroundColor.js",
+    "content": "/**\n*  @file BackgroundColor.js\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}\n*/\n\nconst anime = window.anime;\nconst Q = window.elementify.Q;\n\nimport AbstractAnimation from 'core/AbstractAnimation';\n\n/**\n * BackgroundColor is designed to cycle\n * between two background colors for an HTMLElement.\n *\n * @version 1.0.0\n * @since 1.0.0\n * @author Liqueur de Toile <contact@liqueurdetoile.com>\n * @extends {AbstractAnimation}\n */\nexport default class BackgroundColor extends AbstractAnimation {\n  /**\n   * Initialize an instance\n   * @param {Object} [options={}] Options for animation\n   * @param {HtmlElement} options.targets Target(s) for animation\n   * @param {string} options.from Starting color (any valid CSS value)\n   * @param {string} options.to Ending color (any valid CSS value)\n   * @param {number} [options.duration=3000] Half-cycle duration\n   * @param {string} [options.easing='easeInOutQuad'] Easing Function\n   * @param {string} [options.direction='alternate']  Animation direction\n   * @param {boolean|number} [options.loop] Should the animation loop or not\n   */\n  constructor(options = {}) {\n    super(options);\n\n    this.check(['targets', 'from', 'to']);\n    this.options.define('duration', 3000);\n    this.options.define('easing', 'easeInOutQuad');\n    this.options.define('direction', 'alternate');\n    this.options.define('loop', true);\n  }\n\n  /**\n   * Start the animation\n   * @return {this} Chainable\n   */\n  start() {\n    // Setting start color\n    Q(this.options.pull('targets')).style('backgroundColor', this.options.pull('from'));\n\n    this.animation = anime({\n      targets: this.options.pull('targets'),\n      backgroundColor: this.options.pull('to'),\n      direction: this.options.pull('direction'),\n      loop: this.options.pull('loop'),\n      easing: this.options.pull('easing'),\n      duration: this.options.pull('duration')\n    });\n\n    return this;\n  }\n}\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/src/animations/BackgroundColor.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "anime",
+    "memberof": "src/animations/BackgroundColor.js",
+    "static": true,
+    "longname": "src/animations/BackgroundColor.js~anime",
+    "access": "public",
+    "export": false,
+    "importPath": "beloader-animations/src/animations/BackgroundColor.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@file",
+        "tagValue": "BackgroundColor.js"
+      },
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      },
+      {
+        "tagName": "@licence",
+        "tagValue": "AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "Q",
+    "memberof": "src/animations/BackgroundColor.js",
+    "static": true,
+    "longname": "src/animations/BackgroundColor.js~Q",
+    "access": "public",
+    "export": false,
+    "importPath": "beloader-animations/src/animations/BackgroundColor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "class",
+    "name": "BackgroundColor",
+    "memberof": "src/animations/BackgroundColor.js",
+    "static": true,
+    "longname": "src/animations/BackgroundColor.js~BackgroundColor",
+    "access": "public",
+    "export": true,
+    "importPath": "beloader-animations/src/animations/BackgroundColor.js",
+    "importStyle": "BackgroundColor",
+    "description": "BackgroundColor is designed to cycle\nbetween two background colors for an HTMLElement.",
+    "lineNumber": 21,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "AbstractAnimation"
+    ]
+  },
+  {
+    "__docId__": 52,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/animations/BackgroundColor.js~BackgroundColor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/animations/BackgroundColor.js~BackgroundColor#constructor",
+    "access": "public",
+    "description": "Initialize an instance",
+    "lineNumber": 33,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "{}",
+        "defaultRaw": {},
+        "name": "options",
+        "description": "Options for animation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "HtmlElement"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options.targets",
+        "description": "Target(s) for animation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options.from",
+        "description": "Starting color (any valid CSS value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options.to",
+        "description": "Ending color (any valid CSS value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "3000",
+        "defaultRaw": 3000,
+        "name": "options.duration",
+        "description": "Half-cycle duration"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'easeInOutQuad'",
+        "defaultRaw": "'easeInOutQuad'",
+        "name": "options.easing",
+        "description": "Easing Function"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'alternate'",
+        "defaultRaw": "'alternate'",
+        "name": "options.direction",
+        "description": "Animation direction"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean",
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.loop",
+        "description": "Should the animation loop or not"
+      }
+    ]
+  },
+  {
+    "__docId__": 53,
+    "kind": "method",
+    "name": "start",
+    "memberof": "src/animations/BackgroundColor.js~BackgroundColor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/animations/BackgroundColor.js~BackgroundColor#start",
+    "access": "public",
+    "description": "Start the animation",
+    "lineNumber": 47,
+    "return": {
+      "nullable": null,
+      "types": [
+        "this"
+      ],
+      "spread": false,
+      "description": "Chainable"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "animation",
+    "memberof": "src/animations/BackgroundColor.js~BackgroundColor",
+    "static": false,
+    "longname": "src/animations/BackgroundColor.js~BackgroundColor#animation",
+    "access": "public",
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/animations/Ripples.js",
+    "content": "/**\r\n*  @file Ripples.js\r\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\r\n*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}\r\n*/\r\n\r\nconst anime = window.anime;\r\nconst Q = window.elementify.Q;\r\n\nimport AbstractAnimation from 'core/AbstractAnimation';\r\n\r\n/**\r\n * Ripples is a fully customizable effect that\r\n * generates... ripples.\r\n * It can be used as highlighter for click or items.\r\n * It can also be used as loader whith loop active.\r\n *\r\n * @version 1.0.0\r\n * @since 1.0.0\r\n * @author Liqueur de Toile <contact@liqueurdetoile.com>\r\n * @extends {AbstractAnimation}\r\n * @todo Add array and function support to some parameters\r\n */\r\nexport default class Ripples extends AbstractAnimation {\r\n  /**\r\n   * Creates an instance of Ripples\r\n   * @version 1.0.0\r\n   * @since 1.0.0\r\n   * @author Liqueur de Toile <contact@liqueurdetoile.com>\r\n   * @param {Object} [options={}] Options for animation\r\n   * @param {boolean} [options.loop=false]  Wether if animation should loop\r\n   * @param {number} [options.duration=3000] Duration of one ripple animation (ms)\r\n   * @param {number} [options.offset=1000] Offset between two ripples animations (ms)\r\n   * @param {string} [options.width='100px'] Width for the container (any allowed css value)\r\n   * @param {string} [options.height='100px'] Height for the container (any allowed css value)\r\n   * @param {number} [options.scale=30] Scale factor\r\n   * @param {string} [options.easing] Easing formula (any allowed easing by animejs)\r\n   * @param {Object} [options.ripples]  Ripples Options\r\n   * @param {number} [options.ripples.count=3]  Number of ripples\r\n   * @param {string} [options.ripples.width='3px']  Initial innerWidth of a ripple (any allowed css value)\r\n   * @param {string} [options.ripples.height='3px']  Initial innerWidth of a ripple (any allowed css value)\r\n   * @param {string} [options.ripples.borderColor='#09c']  Border color of ripples (any allowed css value)\r\n   * @param {string} [options.ripples.borderStyle='solid']  Border style of ripples (any allowed css value)\r\n   * @param {string} [options.ripples.borderWidth='1px']  Initial border width (any allowed css value)\r\n   * @param {string} [options.ripples.background='']  Background property of a ripple (any allowed css value)\r\n   * @param {Object} [options.ripples.opacity]  Specific options for opacity animation\r\n   * @param {number} [options.ripples.opacity.start=1]  Initial opacity value\r\n   * @param {number} [options.ripples.opacity.end=0]  Final opacity value\r\n   * @param {number} [options.ripples.opacity.duration=this.options.duration]  Opacity animation duration\r\n   * @param {number} [options.ripples.opacity.easing=this.options.easing] Opacity animation easing\r\n   */\r\n  constructor(options = {}) {\r\n    super(options);\r\n\r\n    /**\r\n   * Active ripple index\r\n   * @type {Number}\r\n   * @since 1.0.0\r\n   */\r\n    this.activeRipple = 0;\r\n    this.options.define('loop', false);\r\n    this.options.define('duration', 3000);\r\n    this.options.define('offset', 1000);\r\n    this.options.define('width', '100px');\r\n    this.options.define('height', '100px');\r\n    this.options.define('scale', 30);\r\n    this.options.define('easing', 'easeInSine');\r\n    this.options.define('ripples.count', 3);\r\n    this.options.define('ripples.width', '3px');\r\n    this.options.define('ripples.height', '3px');\r\n    this.options.define('ripples.borderColor', '#09c');\r\n    this.options.define('ripples.borderStyle', 'solid');\r\n    this.options.define('ripples.borderWidth', '1px');\r\n    this.options.define('ripples.background', 'none');\r\n    this.options.define('ripples.borderRadius', '50%');\r\n    this.options.define('ripples.opacity.start', 1);\r\n    this.options.define('ripples.opacity.end', 0);\r\n    this.options.define('ripples.opacity.duration', this.options.pull('duration'));\r\n    this.options.define('ripples.opacity.easing', this.options.pull('easing'));\r\n  }\r\n\r\n  /**\r\n   * HTML block for container\r\n   * @type {HTMLElement}\r\n   */\r\n  get block() {\r\n    /* istanbul ignore else */\r\n    if (!this._block) {\r\n      this._block = Q('+div', {\r\n        id: this.id,\r\n        class: 'ripple',\r\n        style: {\r\n          display: 'flex',\r\n          justifyContent: 'center',\r\n          alignItems: 'center',\r\n          width: this.options.pull('width'),\r\n          height: this.options.pull('height')\r\n        }\r\n      });\r\n    }\r\n\r\n    return this._block;\r\n  }\r\n\r\n  /**\r\n   * Generates a ripple animation given the options\r\n   * @return {Object} Animation that can be added to timeline\r\n   */\r\n  _ripple() {\r\n    var ripple = Q('+div', {\r\n      style: {\r\n        position: 'absolute',\r\n        width: this.options.pull('ripples.width'),\r\n        height: this.options.pull('ripples.height'),\r\n        borderRadius: this.options.pull('ripples.borderRadius'),\r\n        background: this.options.pull('ripples.background'),\r\n        borderStyle: this.options.pull('ripples.borderStyle'),\r\n        borderWidth: this.options.pull('ripples.borderWidth'),\r\n        borderColor: this.options.pull('ripples.borderColor')\r\n      }\r\n    });\r\n\r\n    var animation = {\r\n      targets: ripple.node,\r\n      scale: {\r\n        value: this.options.pull('scale'),\r\n        duration: this.options.pull('duration'),\r\n        easing: this.options.pull('easing')\r\n      },\r\n      opacity: {\r\n        value: [\r\n          this.options.pull('ripples.opacity.start'),\r\n          this.options.pull('ripples.opacity.end')\r\n        ],\r\n        duration: this.options.pull('ripples.opacity.duration'),\r\n        easing: this.options.pull('ripples.opacity.easing')\r\n      },\r\n      loop: this.options.pull('loop'),\r\n      offset: this.activeRipple * this.options.pull('offset'),\r\n      begin: function () {\r\n        this._block.append(ripple);\r\n      }.bind(this),\r\n      complete: () => ripple.remove()\r\n    };\r\n\r\n    this.activeRipple++;\r\n    if (this.activeRipple === this.options.pull('ripples.count')) {\r\n      this.activeRipple = 0;\r\n    }\r\n\r\n    return animation;\r\n  }\r\n\r\n  /**\r\n   * Launch the animation\r\n   * @return {this} Chainable\r\n   */\r\n  start() {\r\n    /**\r\n     * Timeline object\r\n     * @type {Timeline}\r\n     */\r\n    this.animation = anime.timeline({\r\n      loop: this.options.pull('loop')\r\n    });\r\n\r\n    for (let i = 0; i < this.options.pull('ripples.count'); i++) {\r\n      this.animation.add(this._ripple());\r\n    }\r\n\r\n    return this;\r\n  }\r\n}\r\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/src/animations/Ripples.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "anime",
+    "memberof": "src/animations/Ripples.js",
+    "static": true,
+    "longname": "src/animations/Ripples.js~anime",
+    "access": "public",
+    "export": false,
+    "importPath": "beloader-animations/src/animations/Ripples.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@file",
+        "tagValue": "Ripples.js"
+      },
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      },
+      {
+        "tagName": "@licence",
+        "tagValue": "AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "variable",
+    "name": "Q",
+    "memberof": "src/animations/Ripples.js",
+    "static": true,
+    "longname": "src/animations/Ripples.js~Q",
+    "access": "public",
+    "export": false,
+    "importPath": "beloader-animations/src/animations/Ripples.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "class",
+    "name": "Ripples",
+    "memberof": "src/animations/Ripples.js",
+    "static": true,
+    "longname": "src/animations/Ripples.js~Ripples",
+    "access": "public",
+    "export": true,
+    "importPath": "beloader-animations/src/animations/Ripples.js",
+    "importStyle": "Ripples",
+    "description": "Ripples is a fully customizable effect that\ngenerates... ripples.\nIt can be used as highlighter for click or items.\nIt can also be used as loader whith loop active.",
+    "lineNumber": 24,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "todo": [
+      "Add array and function support to some parameters"
+    ],
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "AbstractAnimation"
+    ]
+  },
+  {
+    "__docId__": 59,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/animations/Ripples.js~Ripples",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/animations/Ripples.js~Ripples#constructor",
+    "access": "public",
+    "description": "Creates an instance of Ripples",
+    "lineNumber": 52,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "{}",
+        "defaultRaw": {},
+        "name": "options",
+        "description": "Options for animation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "false",
+        "defaultRaw": false,
+        "name": "options.loop",
+        "description": "Wether if animation should loop"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "3000",
+        "defaultRaw": 3000,
+        "name": "options.duration",
+        "description": "Duration of one ripple animation (ms)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "1000",
+        "defaultRaw": 1000,
+        "name": "options.offset",
+        "description": "Offset between two ripples animations (ms)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'100px'",
+        "defaultRaw": "'100px'",
+        "name": "options.width",
+        "description": "Width for the container (any allowed css value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'100px'",
+        "defaultRaw": "'100px'",
+        "name": "options.height",
+        "description": "Height for the container (any allowed css value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "30",
+        "defaultRaw": 30,
+        "name": "options.scale",
+        "description": "Scale factor"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.easing",
+        "description": "Easing formula (any allowed easing by animejs)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.ripples",
+        "description": "Ripples Options"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "3",
+        "defaultRaw": 3,
+        "name": "options.ripples.count",
+        "description": "Number of ripples"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'3px'",
+        "defaultRaw": "'3px'",
+        "name": "options.ripples.width",
+        "description": "Initial innerWidth of a ripple (any allowed css value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'3px'",
+        "defaultRaw": "'3px'",
+        "name": "options.ripples.height",
+        "description": "Initial innerWidth of a ripple (any allowed css value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'#09c'",
+        "defaultRaw": "'#09c'",
+        "name": "options.ripples.borderColor",
+        "description": "Border color of ripples (any allowed css value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'solid'",
+        "defaultRaw": "'solid'",
+        "name": "options.ripples.borderStyle",
+        "description": "Border style of ripples (any allowed css value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'1px'",
+        "defaultRaw": "'1px'",
+        "name": "options.ripples.borderWidth",
+        "description": "Initial border width (any allowed css value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "''",
+        "defaultRaw": "''",
+        "name": "options.ripples.background",
+        "description": "Background property of a ripple (any allowed css value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.ripples.opacity",
+        "description": "Specific options for opacity animation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "1",
+        "defaultRaw": 1,
+        "name": "options.ripples.opacity.start",
+        "description": "Initial opacity value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "0",
+        "defaultRaw": 0,
+        "name": "options.ripples.opacity.end",
+        "description": "Final opacity value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "this.options.duration",
+        "defaultRaw": "this.options.duration",
+        "name": "options.ripples.opacity.duration",
+        "description": "Opacity animation duration"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "this.options.easing",
+        "defaultRaw": "this.options.easing",
+        "name": "options.ripples.opacity.easing",
+        "description": "Opacity animation easing"
+      }
+    ]
+  },
+  {
+    "__docId__": 60,
+    "kind": "member",
+    "name": "activeRipple",
+    "memberof": "src/animations/Ripples.js~Ripples",
+    "static": false,
+    "longname": "src/animations/Ripples.js~Ripples#activeRipple",
+    "access": "public",
+    "description": "Active ripple index",
+    "lineNumber": 60,
+    "since": "1.0.0",
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "get",
+    "name": "block",
+    "memberof": "src/animations/Ripples.js~Ripples",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/animations/Ripples.js~Ripples#block",
+    "access": "public",
+    "description": "HTML block for container",
+    "lineNumber": 86,
+    "type": {
+      "nullable": null,
+      "types": [
+        "HTMLElement"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "member",
+    "name": "_block",
+    "memberof": "src/animations/Ripples.js~Ripples",
+    "static": false,
+    "longname": "src/animations/Ripples.js~Ripples#_block",
+    "access": "private",
+    "description": null,
+    "lineNumber": 89,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "_ripple",
+    "memberof": "src/animations/Ripples.js~Ripples",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/animations/Ripples.js~Ripples#_ripple",
+    "access": "private",
+    "description": "Generates a ripple animation given the options",
+    "lineNumber": 109,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "Animation that can be added to timeline"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "start",
+    "memberof": "src/animations/Ripples.js~Ripples",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/animations/Ripples.js~Ripples#start",
+    "access": "public",
+    "description": "Launch the animation",
+    "lineNumber": 158,
+    "return": {
+      "nullable": null,
+      "types": [
+        "this"
+      ],
+      "spread": false,
+      "description": "Chainable"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 66,
+    "kind": "member",
+    "name": "animation",
+    "memberof": "src/animations/Ripples.js~Ripples",
+    "static": false,
+    "longname": "src/animations/Ripples.js~Ripples#animation",
+    "access": "public",
+    "description": "Timeline object",
+    "lineNumber": 163,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Timeline"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "src/animations/ThreeDotsBouncing.js",
+    "content": "/**\n*  @file ThreeDotsBouncing.js\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}\n*/\n\nconst anime = window.anime;\nconst Q = window.elementify.Q;\n\nimport AbstractAnimation from 'core/AbstractAnimation';\n\n/**\n*  ThreeDotsBouncing provides a block of\n*  three dots bouncing from left to right and reverse.\n*\n*  @version 1.0.0\n*  @since 1.0.0\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*  @extends {AbstractAnimation}\n*\n*  @example\n*  var dots = new ThreeDotsBouncing();\n*\n*  document.body.appendChild(dots.block);\n*  dots.start();\n*\n*  @see https://cdn.rawgit.com/beloader/beloader-animations/94619414/demos/threedotsbouncing.html\n*/\nexport default class ThreeDotsBouncing extends AbstractAnimation {\n  /**\n  *  Creates an instance of ThreeDotsBouncing with given\n  *  options\n  *\n  *  @version 1.0.0\n  *  @since 1.0.0\n  *  @author Liqueur de Toile <contact@liqueurdetoile.com>\n  *\n  *  @param {Object} options  Options for the animation\n  *  @param {number}  [options.duration=3000]  Duration of the animation\n  *  @param {number}  [options.offset=1000]  Offset duration between each dots animation\n  *  @param {number}  [options.width=25%]  Width of the container (any CSS compatible value)\n  *  @param {Object}  [options.dots]  Specific options for dots\n  *  @param {number}  [options.dots.width=30]  Width of a dot (in pixels)\n  *  @param {number}  [options.dots.height=30]  Height of a dot (in pixels)\n  *  @param {string|Function}  [options.dots.color='#fff']  color of a dot (any CSS compatible form)\n  */\n  constructor(options = {}) {\n    super(options);\n\n    this.options.define('duration', 3000);\n    this.options.define('offset', 1000);\n    this.options.define('width', '25%');\n    this.options.define('dots.width', 30);\n    this.options.define('dots.height', 30);\n    this.options.define('dots.color', '#fff');\n  }\n\n  /**\n  *  Get the HTMLElement for the block\n  *\n  *  @version 1.0.0\n  *  @since 1.0.0\n  *  @author Liqueur de Toile <contact@liqueurdetoile.com>\n  *  @type {HTMLElement}\n  */\n  get block() {\n    /* istanbul ignore else */\n    if (!this._block) {\n      let dd = [\n        this.options.pull('duration') + this.options.pull('offset'),\n        this.options.pull('duration') / 2,\n        this.options.pull('duration') - this.options.pull('offset')\n      ];\n      let ddr = dd.reverse();\n\n      this._block = Q('+div', {\n        id: this.id,\n        class: 'tbd',\n        style: {\n          margin: '0 auto',\n          width: this.options.pull('width')\n        }\n      });\n\n      dd.forEach((d, i) => {\n        let line = Q('+div', {\n          class: 'tbd-line',\n          style: 'margin: 1em 0'\n        });\n\n        line.append(Q('+div', {\n          class: 'tbd-dot',\n          style: {\n            width: this.options.pull('dots.width'),\n            height: this.options.pull('dots.height'),\n            backgroundColor: this.options.pull('dots.color')\n          },\n          data: {\n            duration: d,\n            'duration-rev': ddr[i]\n          }\n        }));\n\n        this._block.append(line);\n      });\n    }\n\n    return this._block;\n  }\n\n  /**\n  *  Starts the animation\n  *\n  *  @version 1.0.0\n  *  @since 1.0.0\n  *  @author Liqueur de Toile <contact@liqueurdetoile.com>\n  *\n  *  @returns {this} Chainable\n  */\n  start() {\n    let timeline = anime.timeline({\n      loop: true,\n      autoplay: true\n    });\n\n    timeline.add({\n      targets: `#${this.id} .tbd-dot`,\n      translateX: Q(`#${this.id}`).width - this.options.pull('dots.width'),\n      rotate: 180,\n      duration: function (target) {\n        return target.getAttribute('data-duration');\n      },\n      delay: function (target, index) {\n        return index * 100;\n      },\n      elasticity: function (target, index, totalTargets) {\n        return 200 + ((totalTargets - index) * 200);\n      }\n    });\n\n    timeline.add({\n      targets: `#${this.id} .tbd-dot`,\n      translateX: 0,\n      rotate: 0,\n      duration: function (target) {\n        return target.getAttribute('data-duration-rev');\n      },\n      delay: function (target, index, totalTargets) {\n        return 100 + ((totalTargets - index) * 100);\n      },\n      elasticity: function (target, index, totalTargets) {\n        return 200 + ((index - totalTargets) * 200);\n      }\n    });\n\n    this.animation = timeline;\n\n    return this;\n  }\n}\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/src/animations/ThreeDotsBouncing.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "variable",
+    "name": "anime",
+    "memberof": "src/animations/ThreeDotsBouncing.js",
+    "static": true,
+    "longname": "src/animations/ThreeDotsBouncing.js~anime",
+    "access": "public",
+    "export": false,
+    "importPath": "beloader-animations/src/animations/ThreeDotsBouncing.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@file",
+        "tagValue": "ThreeDotsBouncing.js"
+      },
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      },
+      {
+        "tagName": "@licence",
+        "tagValue": "AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "variable",
+    "name": "Q",
+    "memberof": "src/animations/ThreeDotsBouncing.js",
+    "static": true,
+    "longname": "src/animations/ThreeDotsBouncing.js~Q",
+    "access": "public",
+    "export": false,
+    "importPath": "beloader-animations/src/animations/ThreeDotsBouncing.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "class",
+    "name": "ThreeDotsBouncing",
+    "memberof": "src/animations/ThreeDotsBouncing.js",
+    "static": true,
+    "longname": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing",
+    "access": "public",
+    "export": true,
+    "importPath": "beloader-animations/src/animations/ThreeDotsBouncing.js",
+    "importStyle": "ThreeDotsBouncing",
+    "description": " ThreeDotsBouncing provides a block of\n three dots bouncing from left to right and reverse.",
+    "examples": [
+      " var dots = new ThreeDotsBouncing();\n\n document.body.appendChild(dots.block);\n dots.start();"
+    ],
+    "see": [
+      "https://cdn.rawgit.com/beloader/beloader-animations/94619414/demos/threedotsbouncing.html"
+    ],
+    "lineNumber": 29,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "AbstractAnimation"
+    ]
+  },
+  {
+    "__docId__": 71,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing#constructor",
+    "access": "public",
+    "description": " Creates an instance of ThreeDotsBouncing with given\n options",
+    "lineNumber": 47,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "Options for the animation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "3000",
+        "defaultRaw": 3000,
+        "name": "options.duration",
+        "description": "Duration of the animation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "1000",
+        "defaultRaw": 1000,
+        "name": "options.offset",
+        "description": "Offset duration between each dots animation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "25%",
+        "defaultRaw": "25%",
+        "name": "options.width",
+        "description": "Width of the container (any CSS compatible value)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.dots",
+        "description": "Specific options for dots"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "30",
+        "defaultRaw": 30,
+        "name": "options.dots.width",
+        "description": "Width of a dot (in pixels)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "30",
+        "defaultRaw": 30,
+        "name": "options.dots.height",
+        "description": "Height of a dot (in pixels)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string",
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'#fff'",
+        "defaultRaw": "'#fff'",
+        "name": "options.dots.color",
+        "description": "color of a dot (any CSS compatible form)"
+      }
+    ]
+  },
+  {
+    "__docId__": 72,
+    "kind": "get",
+    "name": "block",
+    "memberof": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing#block",
+    "access": "public",
+    "description": " Get the HTMLElement for the block",
+    "lineNumber": 66,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "HTMLElement"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "member",
+    "name": "_block",
+    "memberof": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing",
+    "static": false,
+    "longname": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing#_block",
+    "access": "private",
+    "description": null,
+    "lineNumber": 76,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "method",
+    "name": "start",
+    "memberof": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing#start",
+    "access": "public",
+    "description": " Starts the animation",
+    "lineNumber": 120,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{this} Chainable"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "this"
+      ],
+      "spread": false,
+      "description": "Chainable"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 75,
+    "kind": "member",
+    "name": "animation",
+    "memberof": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing",
+    "static": false,
+    "longname": "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing#animation",
+    "access": "public",
+    "description": null,
+    "lineNumber": 156,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/beloader-animations.js",
+    "content": "/**\n*  @file beloader-animations.js\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}\n*/\n\nimport 'core/publicpath';\n\nexport const animations = {\n  init: function (options = {}) {\n    let elementify, animejs;\n\n    // Load elementify and anime if needed\n    if (!window.elementify && options.elementify !== false) {\n      elementify = this.parent.fetch('script', {\n        id: 'elementify',\n        url: options.elementify || 'https://unpkg.com/elementify@latest'\n      }).promise;\n    } else elementify = new Promise((resolve, reject) => { resolve();});\n\n    if (!window.anime && options.anime !== false) {\n      animejs = this.parent.fetch('script', {\n        id: 'anime',\n        url: options.anime || 'https://unpkg.com/animejs@latest'\n      }).promise;\n    } else animejs = new Promise((resolve, reject) => { resolve();});\n\n    this.promise = Promise.all([elementify, animejs]);\n\n    return this;\n  },\n\n  load: function (animation, success = null, failure = null) {\n    let p = import(\n      /* webpackChunkName: \"[request]\" */\n      `animations/${animation}`\n    );\n\n    return new Promise((resolve, reject) => {\n      p.then(\n        a => {\n          if (success instanceof Function) success(a.default);\n          resolve(a.default);\n        },\n        e => {\n          if (failure instanceof Function) failure(e);\n          reject(e);\n        }\n      );\n    });\n  }\n};\n\nexport default animations;\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/src/beloader-animations.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "animations",
+    "memberof": "src/beloader-animations.js",
+    "static": true,
+    "longname": "src/beloader-animations.js~animations",
+    "access": "public",
+    "export": true,
+    "importPath": "beloader-animations/src/beloader-animations.js",
+    "importStyle": "{animations}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"init\": *, \"load\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "src/core/AbstractAnimation.js",
+    "content": "import ObjectArray from 'dot-object-array';\nimport uniqid from 'uniqid';\n\n/**\n*  Abstract class for animations\n*\n*  @version 1.0.0\n*  @since 1.0.0\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*/\nexport default class AbstractAnimation {\n  /**\n  *  Generates unique ID and stores options\n  *\n  *  @version 1.0.0\n  *  @since 1.0.0\n  *  @author Liqueur de Toile <contact@liqueurdetoile.com>\n  *  @abstract\n  */\n  constructor(options = {}) {\n    /**\n    *  Auto-generated unique id for animation\n    *  @since 1.0.0\n    *  @type {string}\n    */\n    this.id = 'animation-' + uniqid();\n\n    /**\n    *  Options for the animation\n    *  @since 1.0.0\n    *  @type {DotObjectArray}\n    */\n    this.options = new ObjectArray(options);\n\n    /**\n    *  Animejs animation object or timeline\n    *  @type {object}\n    */\n    this.animation = undefined;\n  }\n\n  /**\n  *  Always return false\n  *  if not overriden in childs class\n  *\n  *  @version 1.0.0\n  *  @since 1.0.0\n  *  @author Liqueur de Toile <contact@liqueurdetoile.com>\n  *  @type {boolean}\n  */\n  get block() {\n    return false;\n  }\n\n  /**\n  *  Check if required options have been provided\n  *\n  *  @version 1.0.0\n  *  @since 1.0.0\n  *  @author Liqueur de Toile <contact@liqueurdetoile.com>\n  *\n  *  @param {Array|string} opts Option name or array of options names\n  *  @throws {TypeError}  If an option is missing\n  */\n  check(opts) {\n    if (typeof opts === 'string') opts = [opts];\n    opts.forEach(opt => {\n      if (!this.options.has(opt)) throw new TypeError(`Missing option ${opt} for animation`);\n    });\n    return true;\n  }\n}\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/src/core/AbstractAnimation.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "class",
+    "name": "AbstractAnimation",
+    "memberof": "src/core/AbstractAnimation.js",
+    "static": true,
+    "longname": "src/core/AbstractAnimation.js~AbstractAnimation",
+    "access": "public",
+    "export": true,
+    "importPath": "beloader-animations/src/core/AbstractAnimation.js",
+    "importStyle": "AbstractAnimation",
+    "description": " Abstract class for animations",
+    "lineNumber": 11,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "interface": false
+  },
+  {
+    "__docId__": 80,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/core/AbstractAnimation.js~AbstractAnimation",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/AbstractAnimation.js~AbstractAnimation#constructor",
+    "access": "public",
+    "description": " Generates unique ID and stores options",
+    "lineNumber": 20,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "abstract": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "member",
+    "name": "id",
+    "memberof": "src/core/AbstractAnimation.js~AbstractAnimation",
+    "static": false,
+    "longname": "src/core/AbstractAnimation.js~AbstractAnimation#id",
+    "access": "public",
+    "description": " Auto-generated unique id for animation",
+    "lineNumber": 26,
+    "since": "1.0.0",
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "member",
+    "name": "options",
+    "memberof": "src/core/AbstractAnimation.js~AbstractAnimation",
+    "static": false,
+    "longname": "src/core/AbstractAnimation.js~AbstractAnimation#options",
+    "access": "public",
+    "description": " Options for the animation",
+    "lineNumber": 33,
+    "since": "1.0.0",
+    "type": {
+      "nullable": null,
+      "types": [
+        "DotObjectArray"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "member",
+    "name": "animation",
+    "memberof": "src/core/AbstractAnimation.js~AbstractAnimation",
+    "static": false,
+    "longname": "src/core/AbstractAnimation.js~AbstractAnimation#animation",
+    "access": "public",
+    "description": " Animejs animation object or timeline",
+    "lineNumber": 39,
+    "type": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "get",
+    "name": "block",
+    "memberof": "src/core/AbstractAnimation.js~AbstractAnimation",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/AbstractAnimation.js~AbstractAnimation#block",
+    "access": "public",
+    "description": " Always return false\n if not overriden in childs class",
+    "lineNumber": 51,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "method",
+    "name": "check",
+    "memberof": "src/core/AbstractAnimation.js~AbstractAnimation",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core/AbstractAnimation.js~AbstractAnimation#check",
+    "access": "public",
+    "description": " Check if required options have been provided",
+    "lineNumber": 65,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array",
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "opts",
+        "description": "Option name or array of options names"
+      }
+    ],
+    "throws": [
+      {
+        "types": [
+          "TypeError"
+        ],
+        "description": "If an option is missing"
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/core/publicpath.js",
+    "content": "/**\n*  @file publicpath.js\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}\n*/\n\n/**\n*  This script initialize webpack public path for CDN usage compatibility\n*\n*  @version 1.0.0\n*  @since 1.0.0\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*/\n\nlet scripts = document.getElementsByTagName('script');\n/** @ignore */\nlet r = new RegExp('^(?:[a-z]+:)?//', 'i');\n\nfor (let i = 0; i < scripts.length; i++) {\n  let script = scripts[i];\n  let tmp = script.src.match(/(.+)beloader-animations/);\n\n  // Only set public path if beloader path is absolute\n  if (tmp && tmp[1] && r.test(tmp[1])) __webpack_public_path__ = tmp[1]; // eslint-disable-line\n}\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/src/core/publicpath.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "variable",
+    "name": "scripts",
+    "memberof": "src/core/publicpath.js",
+    "static": true,
+    "longname": "src/core/publicpath.js~scripts",
+    "access": "public",
+    "export": false,
+    "importPath": "beloader-animations/src/core/publicpath.js",
+    "importStyle": null,
+    "description": " This script initialize webpack public path for CDN usage compatibility",
+    "lineNumber": 15,
+    "since": "1.0.0",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@author",
+        "tagValue": "Liqueur de Toile <contact@liqueurdetoile.com>"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "variable",
+    "name": "r",
+    "memberof": "src/core/publicpath.js",
+    "static": true,
+    "longname": "src/core/publicpath.js~r",
+    "access": "public",
+    "export": false,
+    "importPath": "beloader-animations/src/core/publicpath.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 17,
+    "ignore": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/typedefs/typedefs.jsdoc",
+    "content": "/**\r\n * @external {DotObjectArray} https://liqueurdetoile.github.io/DotObjectArray\r\n */\r\n\r\n/**\r\n * @external {Timeline} https://github.com/juliangarnier/anime#timeline\r\n */\r\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/src/typedefs/typedefs.jsdoc",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "external",
+    "name": "DotObjectArray",
+    "externalLink": "https://liqueurdetoile.github.io/DotObjectArray",
+    "memberof": "src/typedefs/typedefs.jsdoc",
+    "static": true,
+    "longname": "src/typedefs/typedefs.jsdoc~DotObjectArray",
+    "access": "public",
+    "description": ""
+  },
+  {
+    "__docId__": 91,
+    "kind": "external",
+    "name": "Timeline",
+    "externalLink": "https://github.com/juliangarnier/anime#timeline",
+    "memberof": "src/typedefs/typedefs.jsdoc",
+    "static": true,
+    "longname": "src/typedefs/typedefs.jsdoc~Timeline",
+    "access": "public",
+    "description": ""
+  },
+  {
+    "kind": "index",
+    "content": "[![NPM](https://nodei.co/npm/beloader-animations.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/beloader-animations)\n\n[![GitHub release](https://img.shields.io/github/release/beloader-animations/beloader-animations.svg)](https://github.com/beloader-animations/beloader-animations)\n[![Gzip size](http://img.badgesize.io/https://cdn.jsdelivr.net/npm/beloader-animations@latest?compression=gzip&style=flat-square)](https://cdn.jsdelivr.net/npm/beloader-animations@latest)\n[![Build Status](https://travis-ci.org/beloader-animations/beloader-animations.svg?branch=master)](https://travis-ci.org/beloader-animations/beloader-animations)\n[![Coverage Status](https://coveralls.io/repos/github/beloader-animations/beloader-animations/badge.svg?branch=master)](https://coveralls.io/github/beloader-animations/beloader-animations?branch=master)\n[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)\n[![Documentation](https://beloader-animations.github.io/beloader-animations/badge.svg)](https://beloader-animations.github.io/beloader-animations/)\n\n[![bitHound Overall Score](https://www.bithound.io/github/beloader-animations/beloader-animations/badges/score.svg)](https://www.bithound.io/github/beloader-animations/beloader-animations)\n[![bitHound Code](https://www.bithound.io/github/beloader-animations/beloader-animations/badges/code.svg)](https://www.bithound.io/github/beloader-animations/beloader-animations)\n[![bitHound Dependencies](https://www.bithound.io/github/beloader-animations/beloader-animations/badges/dependencies.svg)](https://www.bithound.io/github/beloader-animations/beloader-animations/master/dependencies/npm)\n[![bitHound Dev Dependencies](https://www.bithound.io/github/beloader-animations/beloader-animations/badges/devDependencies.svg)](https://www.bithound.io/github/beloader-animations/beloader-animations/master/dependencies/npm)\n[![Known Vulnerabilities](https://snyk.io/test/github/beloader-animations/beloader-animations/badge.svg?targetFile=package.json)](https://snyk.io/test/github/beloader-animations/beloader-animations?targetFile=package.json)\n\n<p align=\"center\"><a href=\"https://liqueurdetoile.com\" target=\"\\_blank\"><img src=\"https://hosting.liqueurdetoile.com/logo_lqdt.png\" alt=\"Liqueur de Toile\"></a></p>\n\n# beloader-animations\nBeloader animations is a plugin for Beloader.\n\nIt loads [Elementify](https://github.com/liqueurdetoile/elementify) for easy DOM\nmangagement and bundles the great\n[anime.js](https://github.com/juliangarnier/anime) from Julian Garnier to support\ncustom animations.\n\nIt provides some presets for displaying animated blocks, anime background colors...\n\n## Installation\n\n### In browser\nFor usage in browser, no installation is required. Simply load plugin with [Beloader](https://beloader.github.io/beloader/manual/plugins.html).\n\nThat example will load Beloader from CDN, then load plugin and font and finally display animated block\nand loading message without FOUT effect.\n\n```html\n<html>\n<head>Animation Beloader plugin Example</head>\n<body style=\"background-color:#000\">\n  <style>\n    .loading {\n      font-family: 'Droid Sans';\n      font-size: 2em;\n      text-align: center;\n      color: #fff;\n      font-weight: bold;\n      margin-top: 2em;\n      text-transform: uppercase\n    }\n  </style>\n  <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/beloader@latest/dist/beloader.min.js\"></script>\n  <script type=\"text/javascript\">\n    var loader = new Beloader({\n      defer: true\n    });\n    \n    loader.fetch('plugin', {\n      name: 'animations',\n      url: 'https://cdn.rawgit.com/beloader/beloader-animations/2e01ef79/dist/beloader-animations.min.js'\n    }).promise.then(function() {\n      var bgcolor = new this.animations.colors.BackgroundColor({\n        targets: 'body',\n        from: '#000',\n        to: '#09c'\n      }).start();\n      \n      var dots = new this.animations.blocks.ThreeDotsBouncing();\n      \n      Q('body').style('backgroundColor', '#000');\n      Q('body').append(dots.block);\n      dots.block.width = '30%';\n      dots.start();\n    },\n    (err) => console.log(err));\n    \n    loader.fetch('font', {\n      webfont: {\n        google: {\n          families: ['Droid Sans', 'Droid Serif']\n        }\n      }\n    }).promise.then(function(item) {\n      Q('body').append('<div class=\"loading\">Loading in progress</div>');\n    });\n  </script>\n</body>\n```\n\nSee a demo of this example : [https://cdn.rawgit.com/beloader/beloader-animations/94619414/demos/example.html](https://cdn.rawgit.com/beloader/beloader-animations/94619414/demos/example.html)\n\n### As module\nAs Beloader, beloader-animations is available as UMD to be embedded in wider app. Simply install it :\n\n\n",
+    "longname": "F:\\Projets\\beloader-plugins\\beloader-animations\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"beloader-animations\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Wrapper for animeJS with nice presets to insert animated blocks and animate text, backgrounds and colors\",\n  \"main\": \"dist/beloader-animations.min.js\",\n  \"publishConfig\": {\n    \"access\": \"public\"\n  },\n  \"scripts\": {\n    \"build\": \"webpack --config webpack.conf/build.js -p\",\n    \"dev\": \"webpack --progress --colors --config webpack.conf/dev.js\",\n    \"test\": \"./node_modules/.bin/karma start --single-run --browsers ChromeHeadless && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage\",\n    \"test:dry\": \"./node_modules/.bin/karma start --single-run --browsers ChromeHeadless\",\n    \"test:dev\": \"karma start --browsers ChromeHeadless\",\n    \"docs\": \"./node_modules/.bin/esdoc\",\n    \"prepub\": \"npm run test:dry && npm run build && npm run docs\"\n  },\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.26.0\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-eslint\": \"^8.2.2\",\n    \"babel-loader\": \"^7.1.3\",\n    \"babel-plugin-syntax-dynamic-import\": \"^6.18.0\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"chai\": \"^4.1.2\",\n    \"clean-webpack-plugin\": \"^0.1.19\",\n    \"color-themes-for-google-code-prettify\": \"^2.0.4\",\n    \"coveralls\": \"^3.0.0\",\n    \"css-loader\": \"^0.28.11\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-inject-script-plugin\": \"^1.0.0\",\n    \"esdoc-inject-style-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^4.19.0\",\n    \"eslint-loader\": \"^1.9.0\",\n    \"html-loader\": \"^0.5.1\",\n    \"istanbul-instrumenter-loader\": \"^3.0.0\",\n    \"karma\": \"^2.0.0\",\n    \"karma-babel-preprocessor\": \"^7.0.0\",\n    \"karma-chai\": \"^0.1.0\",\n    \"karma-chrome-launcher\": \"^2.2.0\",\n    \"karma-coverage-istanbul-reporter\": \"^1.4.1\",\n    \"karma-firefox-launcher\": \"^1.1.0\",\n    \"karma-ie-launcher\": \"^1.0.0\",\n    \"karma-mocha\": \"^1.3.0\",\n    \"karma-opera-launcher\": \"^1.0.0\",\n    \"karma-phantomjs-launcher\": \"^1.0.4\",\n    \"karma-runscript-preprocessor\": \"0.0.5\",\n    \"karma-safari-launcher\": \"^1.0.0\",\n    \"karma-sinon\": \"^1.0.5\",\n    \"karma-sourcemap-loader\": \"^0.3.7\",\n    \"karma-webpack\": \"2.0.6\",\n    \"mocha\": \"^5.0.1\",\n    \"phantomjs-prebuilt\": \"^2.1.16\",\n    \"postcss-cssnext\": \"^3.1.0\",\n    \"postcss-loader\": \"^2.1.3\",\n    \"postcss-reporter\": \"^5.0.0\",\n    \"puppeteer\": \"^1.2.0\",\n    \"semantic-release\": \"^15.1.3\",\n    \"sinon\": \"^4.5.0\",\n    \"style-loader\": \"^0.20.2\",\n    \"sugarss\": \"^1.0.1\",\n    \"webpack\": \"^3.11.0\",\n    \"webpack-bundle-analyzer\": \"^2.11.0\",\n    \"webpack-merge\": \"^4.1.2\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/beloader/beloader-animations.git\"\n  },\n  \"keywords\": [\n    \"loader\",\n    \"splash screen\",\n    \"animation\",\n    \"animations\",\n    \"block\",\n    \"animated\",\n    \"app loader\",\n    \"waiting screen\",\n    \"animejs\"\n  ],\n  \"author\": \"Liqueur de Toile\",\n  \"license\": \"AGPL-3.0\",\n  \"bugs\": {\n    \"url\": \"https://github.com/beloader/beloader-animations/issues\"\n  },\n  \"homepage\": \"https://github.com/beloader/beloader-animations\",\n  \"dependencies\": {\n    \"animejs\": \"^2.2.0\",\n    \"dot-object-array\": \"^3.1.0\",\n    \"elementify\": \"^1.2.0\",\n    \"uniqid\": \"^4.1.1\"\n  }\n}\n",
+    "longname": "F:\\Projets\\beloader-plugins\\beloader-animations\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "__docId__": 92,
+    "kind": "testFile",
+    "name": "tests/BackgroundColor.spec.js",
+    "content": "const Beloader = window.Beloader;\r\nconst loader = new Beloader();\r\nvar BackgroundColor;\r\n\r\nimport animations from 'beloader-animations';\r\n\r\ndescribe('BgColor', function () {\r\n  this.timeout(5000);\r\n\r\n  it('should load BackgroundColor', function (done) {\r\n    let a = loader.pluginize('animations', animations);\r\n\r\n    a.promise.then(() => {\r\n      loader.animations.load('BackgroundColor').then(a => {\r\n        BackgroundColor = a;\r\n\r\n        a.name.should.equal('BackgroundColor');\r\n        done();\r\n      });\r\n    });\r\n  });\r\n\r\n  it('should start animation', function () {\r\n    let div = window.elementify.Q('+div');\r\n    let c = new BackgroundColor({\r\n      targets: div.node,\r\n      from: '#000',\r\n      to: '#fff',\r\n      duration: 500\r\n    });\r\n\r\n    c.start();\r\n    c.should.be.instanceof(BackgroundColor);\r\n  });\r\n\r\n  it('should throw exception', function () {\r\n    expect(() => {new BackgroundColor();}).to.throw(TypeError); //eslint-disable-line    \r\n  });\r\n});\r\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/tastes/tests/BackgroundColor.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 93,
+    "kind": "test",
+    "name": "describe0",
+    "testId": 0,
+    "memberof": "tests/BackgroundColor.spec.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "tests/BackgroundColor.spec.js~describe0",
+    "access": null,
+    "description": "BgColor",
+    "lineNumber": 7
+  },
+  {
+    "__docId__": 94,
+    "kind": "test",
+    "name": "it1",
+    "testId": 1,
+    "memberof": "tests/BackgroundColor.spec.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/BackgroundColor.spec.js~describe0.it1",
+    "access": null,
+    "description": "should load BackgroundColor",
+    "lineNumber": 10
+  },
+  {
+    "__docId__": 95,
+    "kind": "test",
+    "name": "it2",
+    "testId": 2,
+    "memberof": "tests/BackgroundColor.spec.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/BackgroundColor.spec.js~describe0.it2",
+    "access": null,
+    "description": "should start animation",
+    "lineNumber": 23
+  },
+  {
+    "__docId__": 96,
+    "kind": "test",
+    "name": "it3",
+    "testId": 3,
+    "memberof": "tests/BackgroundColor.spec.js~describe0",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/BackgroundColor.spec.js~describe0.it3",
+    "access": null,
+    "description": "should throw exception",
+    "lineNumber": 36
+  },
+  {
+    "__docId__": 97,
+    "kind": "testFile",
+    "name": "tests/beloader-animations.spec.js",
+    "content": "const Beloader = window.Beloader;\r\nconst loader = new Beloader();\r\n\nimport animations from 'beloader-animations';\r\nimport AbstractAnimation from 'core/AbstractAnimation';\r\n\r\ndescribe('Main loader', function () {\r\n  this.timeout(5000);\r\n\r\n  it('should load dependencies', function () {\r\n    let a = loader.pluginize('animations', animations);\r\n\r\n    return a.promise.then(() => {\r\n      window.elementify.should.be.an('object');\r\n      window.anime.should.be.a('function');\r\n    });\r\n  });\r\n\r\n  it('should not load dependencies', function () {\r\n    let b = loader.pluginize('b', animations, {\r\n      elementify: false,\r\n      anime: false\r\n    });\r\n\r\n    return b.promise.then(() => {\r\n      expect(true).to.be.true;\r\n    });\r\n  });\r\n\r\n  it('should load animation and return promise', function () {\r\n    return loader.animations.load('Ripples').then(Ripples => {\r\n      let t = new Ripples();\r\n\r\n      t.block.node.nodeName.should.equal('DIV');\r\n    });\r\n  });\r\n\r\n  it('should fail loading animation and return promise', function () {\r\n    return loader.animations.load('Nothing')['catch'](error => {\r\n      console.log(error);\r\n      expect(true).to.be.true;\r\n    });\r\n  });\r\n\r\n  it('should load animation and run callback', function (done) {\r\n    loader.animations.load('Ripples', function (Ripples) {\r\n      let t = new Ripples();\r\n\r\n      t.block.node.nodeName.should.equal('DIV');\r\n      done();\r\n    });\r\n  });\r\n\r\n  it('should fail loading animation and run failure callback', function (done) {\r\n    loader.animations.load('Nothing', null, error => {\r\n      console.log(error);\r\n      expect(true).to.be.true;\r\n      done();\r\n    });\r\n  });\r\n});\r\n\r\ndescribe('AbstractAnimation', function () {\r\n  it('should create an instance', function () {\r\n    let a = new AbstractAnimation();\r\n\r\n    a.block.should.be.false;\r\n  });\r\n\r\n  it('should store options', function () {\r\n    let a = new AbstractAnimation({\r\n      duration: 1000\r\n    });\r\n\r\n    a.options.pull('duration').should.equal(1000);\r\n  });\r\n\r\n  it('should check option as string', function () {\r\n    let a = new AbstractAnimation({\r\n      duration: 1000,\r\n      fixture: false\r\n    });\r\n\r\n    a.check('duration').should.be.true;\r\n    a.check('fixture').should.be.true;\r\n    expect(a.check.bind(a, 'nothing')).to.throw(TypeError);\r\n  });\r\n\r\n  it('should check option as array', function () {\r\n    let a = new AbstractAnimation({\r\n      duration: 1000,\r\n      fixture: false\r\n    });\r\n\r\n    a.check(['duration']).should.be.true;\r\n    a.check(['duration', 'fixture']).should.be.true;\r\n  });\r\n});\r\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/tastes/tests/beloader-animations.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "test",
+    "name": "describe4",
+    "testId": 4,
+    "memberof": "tests/beloader-animations.spec.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe4",
+    "access": null,
+    "description": "Main loader",
+    "lineNumber": 7
+  },
+  {
+    "__docId__": 99,
+    "kind": "test",
+    "name": "it5",
+    "testId": 5,
+    "memberof": "tests/beloader-animations.spec.js~describe4",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe4.it5",
+    "access": null,
+    "description": "should load dependencies",
+    "lineNumber": 10
+  },
+  {
+    "__docId__": 100,
+    "kind": "test",
+    "name": "it6",
+    "testId": 6,
+    "memberof": "tests/beloader-animations.spec.js~describe4",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe4.it6",
+    "access": null,
+    "description": "should not load dependencies",
+    "lineNumber": 19
+  },
+  {
+    "__docId__": 101,
+    "kind": "test",
+    "name": "it7",
+    "testId": 7,
+    "memberof": "tests/beloader-animations.spec.js~describe4",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe4.it7",
+    "access": null,
+    "description": "should load animation and return promise",
+    "lineNumber": 30
+  },
+  {
+    "__docId__": 102,
+    "kind": "test",
+    "name": "it8",
+    "testId": 8,
+    "memberof": "tests/beloader-animations.spec.js~describe4",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe4.it8",
+    "access": null,
+    "description": "should fail loading animation and return promise",
+    "lineNumber": 38
+  },
+  {
+    "__docId__": 103,
+    "kind": "test",
+    "name": "it9",
+    "testId": 9,
+    "memberof": "tests/beloader-animations.spec.js~describe4",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe4.it9",
+    "access": null,
+    "description": "should load animation and run callback",
+    "lineNumber": 45
+  },
+  {
+    "__docId__": 104,
+    "kind": "test",
+    "name": "it10",
+    "testId": 10,
+    "memberof": "tests/beloader-animations.spec.js~describe4",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe4.it10",
+    "access": null,
+    "description": "should fail loading animation and run failure callback",
+    "lineNumber": 54
+  },
+  {
+    "__docId__": 105,
+    "kind": "test",
+    "name": "describe11",
+    "testId": 11,
+    "memberof": "tests/beloader-animations.spec.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe11",
+    "access": null,
+    "description": "AbstractAnimation",
+    "lineNumber": 63
+  },
+  {
+    "__docId__": 106,
+    "kind": "test",
+    "name": "it12",
+    "testId": 12,
+    "memberof": "tests/beloader-animations.spec.js~describe11",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe11.it12",
+    "access": null,
+    "description": "should create an instance",
+    "lineNumber": 64
+  },
+  {
+    "__docId__": 107,
+    "kind": "test",
+    "name": "it13",
+    "testId": 13,
+    "memberof": "tests/beloader-animations.spec.js~describe11",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe11.it13",
+    "access": null,
+    "description": "should store options",
+    "lineNumber": 70
+  },
+  {
+    "__docId__": 108,
+    "kind": "test",
+    "name": "it14",
+    "testId": 14,
+    "memberof": "tests/beloader-animations.spec.js~describe11",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe11.it14",
+    "access": null,
+    "description": "should check option as string",
+    "lineNumber": 78
+  },
+  {
+    "__docId__": 109,
+    "kind": "test",
+    "name": "it15",
+    "testId": 15,
+    "memberof": "tests/beloader-animations.spec.js~describe11",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/beloader-animations.spec.js~describe11.it15",
+    "access": null,
+    "description": "should check option as array",
+    "lineNumber": 89
+  },
+  {
+    "__docId__": 110,
+    "kind": "testFile",
+    "name": "tests/Ripples.spec.js",
+    "content": "const Beloader = window.Beloader;\r\nconst loader = new Beloader();\r\nvar Ripples;\r\n\r\nimport animations from 'beloader-animations';\r\n\r\ndescribe.only('Ripples', function () {\r\n  this.timeout(5000);\r\n\r\n  it('should load Ripples', function (done) {\r\n    let a = loader.pluginize('animations', animations);\r\n\r\n    a.promise.then(() => {\r\n      loader.animations.load('Ripples').then(a => {\r\n        Ripples = a;\r\n\r\n        a.name.should.equal('Ripples');\r\n        done();\r\n      });\r\n    });\r\n  });\r\n\r\n  it('should run Ripples without options', function () {\r\n    let a = new Ripples();\r\n\r\n    this.timeout(6000);\r\n    a.block.node.nodeName.should.equal('DIV');\r\n    a.start();\r\n    return a.animation.finished.then(() => {\r\n      a.animation.completed.should.be.true;\r\n    });\r\n  });\r\n\r\n  it('should run Ripples with options', function () {\r\n    let a = new Ripples({\r\n      duration: 500,\r\n      ripples: {\r\n        count: 1\r\n      }\r\n    });\r\n\r\n    this.timeout(1000);\r\n    a.block.node.nodeName.should.equal('DIV');\r\n    a.start();\r\n    return a.animation.finished.then(() => {\r\n      a.animation.completed.should.be.true;\r\n    });\r\n  });\r\n});\r\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/tastes/tests/Ripples.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 111,
+    "kind": "test",
+    "name": "it16",
+    "testId": 16,
+    "memberof": "tests/Ripples.spec.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "tests/Ripples.spec.js~it16",
+    "access": null,
+    "description": "should load Ripples",
+    "lineNumber": 10
+  },
+  {
+    "__docId__": 112,
+    "kind": "test",
+    "name": "it17",
+    "testId": 17,
+    "memberof": "tests/Ripples.spec.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "tests/Ripples.spec.js~it17",
+    "access": null,
+    "description": "should run Ripples without options",
+    "lineNumber": 23
+  },
+  {
+    "__docId__": 113,
+    "kind": "test",
+    "name": "it18",
+    "testId": 18,
+    "memberof": "tests/Ripples.spec.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "tests/Ripples.spec.js~it18",
+    "access": null,
+    "description": "should run Ripples with options",
+    "lineNumber": 34
+  },
+  {
+    "__docId__": 114,
+    "kind": "testFile",
+    "name": "tests/ThreeDotsBouncing.spec.js",
+    "content": "const Beloader = window.Beloader;\r\nconst loader = new Beloader();\r\nvar ThreeDotsBouncing;\r\n\r\nimport animations from 'beloader-animations';\r\n\r\ndescribe('ThreeDotsBouncing', function () {\r\n  this.timeout(5000);\r\n\r\n  it('should load ThreeDotsBouncing', function () {\r\n    let a = loader.pluginize('animations', animations);\r\n\r\n    return a.promise.then(() => {\r\n      loader.animations.load('ThreeDotsBouncing').then(a => {\r\n        ThreeDotsBouncing = a;\r\n\r\n        a.name.should.equal('ThreeDotsBouncing');\r\n      });\r\n    });\r\n  });\r\n});\r\n",
+    "static": true,
+    "longname": "F:/Projets/beloader-plugins/beloader-animations/tastes/tests/ThreeDotsBouncing.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "test",
+    "name": "describe19",
+    "testId": 19,
+    "memberof": "tests/ThreeDotsBouncing.spec.js",
+    "testDepth": 0,
+    "static": true,
+    "longname": "tests/ThreeDotsBouncing.spec.js~describe19",
+    "access": null,
+    "description": "ThreeDotsBouncing",
+    "lineNumber": 7
+  },
+  {
+    "__docId__": 116,
+    "kind": "test",
+    "name": "it20",
+    "testId": 20,
+    "memberof": "tests/ThreeDotsBouncing.spec.js~describe19",
+    "testDepth": 1,
+    "static": true,
+    "longname": "tests/ThreeDotsBouncing.spec.js~describe19.it20",
+    "access": null,
+    "description": "should load ThreeDotsBouncing",
+    "lineNumber": 10
+  }
+]

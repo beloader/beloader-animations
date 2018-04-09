@@ -1,23 +1,53 @@
 /**
 *  @file beloader-animations.js
 *  @author Liqueur de Toile <contact@liqueurdetoile.com>
-*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader/blob/master/LICENSE}
+*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}
 */
 
-export {Q} from 'elementify';
-import animejs from 'animejs';
-import ThreeDotsBouncing from 'animations/blocks/ThreeDotsBouncing';
-import BackgroundColor from 'animations/colors/BackgroundColor';
+import 'core/publicpath';
 
 export const animations = {
-  animejs: animejs,
+  init: function (options = {}) {
+    let elementify, animejs;
 
-  blocks: {
-    ThreeDotsBouncing: ThreeDotsBouncing
+    // Load elementify and anime if needed
+    if (!window.elementify && options.elementify !== false) {
+      elementify = this.parent.fetch('script', {
+        id: 'elementify',
+        url: options.elementify || 'https://unpkg.com/elementify@latest'
+      }).promise;
+    } else elementify = new Promise((resolve, reject) => { resolve();});
+
+    if (!window.anime && options.anime !== false) {
+      animejs = this.parent.fetch('script', {
+        id: 'anime',
+        url: options.anime || 'https://unpkg.com/animejs@latest'
+      }).promise;
+    } else animejs = new Promise((resolve, reject) => { resolve();});
+
+    this.promise = Promise.all([elementify, animejs]);
+
+    return this;
   },
 
-  colors: {
-    BackgroundColor: BackgroundColor
+  load: function (animation, success = null, failure = null) {
+    let p = import(
+      /* webpackChunkName: "[request]" */
+      `animations/${animation}`
+    );
+
+    return new Promise((resolve, reject) => {
+      p.then(
+        a => {
+          if (success instanceof Function) success(a.default);
+          resolve(a.default);
+        },
+        e => {
+          if (failure instanceof Function) failure(e);
+          reject(e);
+        }
+      );
+    });
   }
 };
 

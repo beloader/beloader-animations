@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/animations/Ripples.js | BeLoader | Highly customizable and lightweight loader based on dynamic imports with splash screen, animated blocks and more</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<link rel="stylesheet" href="./inject/css/0-styles.css"><script src="./inject/script/0-docs.js"></script><meta name="description" content="Wrapper for animeJS with nice presets to insert animated blocks and animate text, backgrounds and colors"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="BeLoader | Highly customizable and lightweight loader based on dynamic imports with splash screen, animated blocks and more"><meta property="twitter:description" content="Wrapper for animeJS with nice presets to insert animated blocks and animate text, backgrounds and colors"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/beloader/beloader-animations.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-animations">animations</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#animations">animations</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/animations/BackgroundColor.js~BackgroundColor.html">BackgroundColor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/animations/Ripples.js~Ripples.html">Ripples</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing.html">ThreeDotsBouncing</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core">core</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/AbstractAnimation.js~AbstractAnimation.html">AbstractAnimation</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#typedefs">typedefs</a><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://liqueurdetoile.github.io/DotObjectArray">DotObjectArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/juliangarnier/anime#timeline">Timeline</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/animations/Ripples.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+*  @file Ripples.js
+*  @author Liqueur de Toile &lt;contact@liqueurdetoile.com&gt;
+*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}
+*/
+
+const anime = window.anime;
+const Q = window.elementify.Q;
+
+import AbstractAnimation from &apos;core/AbstractAnimation&apos;;
+
+/**
+ * Ripples is a fully customizable effect that
+ * generates... ripples.
+ * It can be used as highlighter for click or items.
+ * It can also be used as loader whith loop active.
+ *
+ * @version 1.0.0
+ * @since 1.0.0
+ * @author Liqueur de Toile &lt;contact@liqueurdetoile.com&gt;
+ * @extends {AbstractAnimation}
+ * @todo Add array and function support to some parameters
+ */
+export default class Ripples extends AbstractAnimation {
+  /**
+   * Creates an instance of Ripples
+   * @version 1.0.0
+   * @since 1.0.0
+   * @author Liqueur de Toile &lt;contact@liqueurdetoile.com&gt;
+   * @param {Object} [options={}] Options for animation
+   * @param {boolean} [options.loop=false]  Wether if animation should loop
+   * @param {number} [options.duration=3000] Duration of one ripple animation (ms)
+   * @param {number} [options.offset=1000] Offset between two ripples animations (ms)
+   * @param {string} [options.width=&apos;100px&apos;] Width for the container (any allowed css value)
+   * @param {string} [options.height=&apos;100px&apos;] Height for the container (any allowed css value)
+   * @param {number} [options.scale=30] Scale factor
+   * @param {string} [options.easing] Easing formula (any allowed easing by animejs)
+   * @param {Object} [options.ripples]  Ripples Options
+   * @param {number} [options.ripples.count=3]  Number of ripples
+   * @param {string} [options.ripples.width=&apos;3px&apos;]  Initial innerWidth of a ripple (any allowed css value)
+   * @param {string} [options.ripples.height=&apos;3px&apos;]  Initial innerWidth of a ripple (any allowed css value)
+   * @param {string} [options.ripples.borderColor=&apos;#09c&apos;]  Border color of ripples (any allowed css value)
+   * @param {string} [options.ripples.borderStyle=&apos;solid&apos;]  Border style of ripples (any allowed css value)
+   * @param {string} [options.ripples.borderWidth=&apos;1px&apos;]  Initial border width (any allowed css value)
+   * @param {string} [options.ripples.background=&apos;&apos;]  Background property of a ripple (any allowed css value)
+   * @param {Object} [options.ripples.opacity]  Specific options for opacity animation
+   * @param {number} [options.ripples.opacity.start=1]  Initial opacity value
+   * @param {number} [options.ripples.opacity.end=0]  Final opacity value
+   * @param {number} [options.ripples.opacity.duration=this.options.duration]  Opacity animation duration
+   * @param {number} [options.ripples.opacity.easing=this.options.easing] Opacity animation easing
+   */
+  constructor(options = {}) {
+    super(options);
+
+    /**
+   * Active ripple index
+   * @type {Number}
+   * @since 1.0.0
+   */
+    this.activeRipple = 0;
+    this.options.define(&apos;loop&apos;, false);
+    this.options.define(&apos;duration&apos;, 3000);
+    this.options.define(&apos;offset&apos;, 1000);
+    this.options.define(&apos;width&apos;, &apos;100px&apos;);
+    this.options.define(&apos;height&apos;, &apos;100px&apos;);
+    this.options.define(&apos;scale&apos;, 30);
+    this.options.define(&apos;easing&apos;, &apos;easeInSine&apos;);
+    this.options.define(&apos;ripples.count&apos;, 3);
+    this.options.define(&apos;ripples.width&apos;, &apos;3px&apos;);
+    this.options.define(&apos;ripples.height&apos;, &apos;3px&apos;);
+    this.options.define(&apos;ripples.borderColor&apos;, &apos;#09c&apos;);
+    this.options.define(&apos;ripples.borderStyle&apos;, &apos;solid&apos;);
+    this.options.define(&apos;ripples.borderWidth&apos;, &apos;1px&apos;);
+    this.options.define(&apos;ripples.background&apos;, &apos;none&apos;);
+    this.options.define(&apos;ripples.borderRadius&apos;, &apos;50%&apos;);
+    this.options.define(&apos;ripples.opacity.start&apos;, 1);
+    this.options.define(&apos;ripples.opacity.end&apos;, 0);
+    this.options.define(&apos;ripples.opacity.duration&apos;, this.options.pull(&apos;duration&apos;));
+    this.options.define(&apos;ripples.opacity.easing&apos;, this.options.pull(&apos;easing&apos;));
+  }
+
+  /**
+   * HTML block for container
+   * @type {HTMLElement}
+   */
+  get block() {
+    /* istanbul ignore else */
+    if (!this._block) {
+      this._block = Q(&apos;+div&apos;, {
+        id: this.id,
+        class: &apos;ripple&apos;,
+        style: {
+          display: &apos;flex&apos;,
+          justifyContent: &apos;center&apos;,
+          alignItems: &apos;center&apos;,
+          width: this.options.pull(&apos;width&apos;),
+          height: this.options.pull(&apos;height&apos;)
+        }
+      });
+    }
+
+    return this._block;
+  }
+
+  /**
+   * Generates a ripple animation given the options
+   * @return {Object} Animation that can be added to timeline
+   */
+  _ripple() {
+    var ripple = Q(&apos;+div&apos;, {
+      style: {
+        position: &apos;absolute&apos;,
+        width: this.options.pull(&apos;ripples.width&apos;),
+        height: this.options.pull(&apos;ripples.height&apos;),
+        borderRadius: this.options.pull(&apos;ripples.borderRadius&apos;),
+        background: this.options.pull(&apos;ripples.background&apos;),
+        borderStyle: this.options.pull(&apos;ripples.borderStyle&apos;),
+        borderWidth: this.options.pull(&apos;ripples.borderWidth&apos;),
+        borderColor: this.options.pull(&apos;ripples.borderColor&apos;)
+      }
+    });
+
+    var animation = {
+      targets: ripple.node,
+      scale: {
+        value: this.options.pull(&apos;scale&apos;),
+        duration: this.options.pull(&apos;duration&apos;),
+        easing: this.options.pull(&apos;easing&apos;)
+      },
+      opacity: {
+        value: [
+          this.options.pull(&apos;ripples.opacity.start&apos;),
+          this.options.pull(&apos;ripples.opacity.end&apos;)
+        ],
+        duration: this.options.pull(&apos;ripples.opacity.duration&apos;),
+        easing: this.options.pull(&apos;ripples.opacity.easing&apos;)
+      },
+      loop: this.options.pull(&apos;loop&apos;),
+      offset: this.activeRipple * this.options.pull(&apos;offset&apos;),
+      begin: function () {
+        this._block.append(ripple);
+      }.bind(this),
+      complete: () =&gt; ripple.remove()
+    };
+
+    this.activeRipple++;
+    if (this.activeRipple === this.options.pull(&apos;ripples.count&apos;)) {
+      this.activeRipple = 0;
+    }
+
+    return animation;
+  }
+
+  /**
+   * Launch the animation
+   * @return {this} Chainable
+   */
+  start() {
+    /**
+     * Timeline object
+     * @type {Timeline}
+     */
+    this.animation = anime.timeline({
+      loop: this.options.pull(&apos;loop&apos;)
+    });
+
+    for (let i = 0; i &lt; this.options.pull(&apos;ripples.count&apos;); i++) {
+      this.animation.add(this._ripple());
+    }
+
+    return this;
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

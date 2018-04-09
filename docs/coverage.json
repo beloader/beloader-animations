@@ -1,0 +1,49 @@
+{
+  "coverage": "76.47%",
+  "expectCount": 34,
+  "actualCount": 26,
+  "files": {
+    "src/animations/BackgroundColor.js": {
+      "expectCount": 6,
+      "actualCount": 4,
+      "undocumentLines": [
+        8,
+        51
+      ]
+    },
+    "src/animations/Ripples.js": {
+      "expectCount": 10,
+      "actualCount": 8,
+      "undocumentLines": [
+        8,
+        89
+      ]
+    },
+    "src/animations/ThreeDotsBouncing.js": {
+      "expectCount": 8,
+      "actualCount": 5,
+      "undocumentLines": [
+        8,
+        76,
+        156
+      ]
+    },
+    "src/beloader-animations.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "src/core/AbstractAnimation.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "src/core/publicpath.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    }
+  }
+}

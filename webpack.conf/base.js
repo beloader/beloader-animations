@@ -5,6 +5,10 @@ module.exports = {
   output: {
     libraryTarget: 'umd'
   },
+  externals: {
+    anime: 'anime',
+    elementify: 'elementify'
+  },
   module: {
     rules: [
       {
@@ -13,19 +17,11 @@ module.exports = {
         exclude: /(node_modules|bower_components)/
       },
       {
-        test: /(\.js)$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/,
-        options: {
-          fix: true,
-        }
-      },
-      {
         test: /\.[cs]ss$/,
         use: [
           'style-loader',
           {
-            loader : 'css-loader',              
+            loader: 'css-loader',
             options: {
               minimize: true,
               sourceMap: false,
@@ -36,7 +32,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(html)$/,      
+        test: /\.(html)$/,
         use: {
           loader: 'html-loader',
           options: {
@@ -49,5 +45,5 @@ module.exports = {
   resolve: {
     modules: [path.resolve('./node_modules'), path.resolve('./src')],
     extensions: ['.json', '.js']
-  },
-}
+  }
+};

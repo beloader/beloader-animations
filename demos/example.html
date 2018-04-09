@@ -19,26 +19,29 @@
     var loader = new Beloader({
       defer: true
     });
-    
+
     loader.fetch('plugin', {
       name: 'animations',
       url: 'https://cdn.rawgit.com/beloader/beloader-animations/2e01ef79/dist/beloader-animations.min.js'
     }).promise.then(function() {
-      var bgcolor = new this.animations.colors.BackgroundColor({
-        targets: 'body',
-        from: '#000',
-        to: '#09c'
-      }).start();
-      
-      var dots = new this.animations.blocks.ThreeDotsBouncing();
-      
-      Q('body').style('backgroundColor', '#000');
-      Q('body').append(dots.block);
-      dots.block.width = '30%';
-      dots.start();
-    },
-    (err) => console.log(err));
-    
+      this.animations.load('BackgroundColor', function(BackgroundColor) {
+        var a = new BackgroundColor({
+          targets: 'body',
+          from: '#000',
+          to: '#09c'
+        }).start();
+      });
+
+      this.animations.load('ThreeDotsBouncing').then(function(ThreeDotsBouncing) {
+        var dots = new this.animations.blocks.ThreeDotsBouncing();
+
+        Q('body').style('backgroundColor', '#000');
+        Q('body').append(dots.block);
+        dots.block.width = '30%';
+        dots.start();
+      })
+    });
+
     loader.fetch('font', {
       webfont: {
         google: {

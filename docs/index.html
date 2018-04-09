@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | BeLoader | Highly customizable and lightweight loader based on dynamic imports with splash screen, animated blocks and more</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<link rel="stylesheet" href="./inject/css/0-styles.css"><script src="./inject/script/0-docs.js"></script><meta name="description" content="Wrapper for animeJS with nice presets to insert animated blocks and animate text, backgrounds and colors"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="BeLoader | Highly customizable and lightweight loader based on dynamic imports with splash screen, animated blocks and more"><meta property="twitter:description" content="Wrapper for animeJS with nice presets to insert animated blocks and animate text, backgrounds and colors"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/beloader/beloader-animations.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-animations">animations</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#animations">animations</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/animations/BackgroundColor.js~BackgroundColor.html">BackgroundColor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/animations/Ripples.js~Ripples.html">Ripples</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing.html">ThreeDotsBouncing</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core">core</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/AbstractAnimation.js~AbstractAnimation.html">AbstractAnimation</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#typedefs">typedefs</a><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://liqueurdetoile.github.io/DotObjectArray">DotObjectArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/juliangarnier/anime#timeline">Timeline</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><p><a href="https://www.npmjs.com/package/beloader-animations"><img src="https://nodei.co/npm/beloader-animations.png?downloads=true&amp;downloadRank=true&amp;stars=true" alt="NPM"></a></p>
+<p><a href="https://github.com/beloader-animations/beloader-animations"><img src="https://img.shields.io/github/release/beloader-animations/beloader-animations.svg" alt="GitHub release"></a>
+<a href="https://cdn.jsdelivr.net/npm/beloader-animations@latest"><img src="http://img.badgesize.io/https://cdn.jsdelivr.net/npm/beloader-animations@latest?compression=gzip&amp;style=flat-square" alt="Gzip size"></a>
+<a href="https://travis-ci.org/beloader-animations/beloader-animations"><img src="https://travis-ci.org/beloader-animations/beloader-animations.svg?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/github/beloader-animations/beloader-animations?branch=master"><img src="https://coveralls.io/repos/github/beloader-animations/beloader-animations/badge.svg?branch=master" alt="Coverage Status"></a>
+<a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release"></a>
+<a href="https://beloader-animations.github.io/beloader-animations/"><img src="https://beloader-animations.github.io/beloader-animations/badge.svg" alt="Documentation"></a></p>
+<p><a href="https://www.bithound.io/github/beloader-animations/beloader-animations"><img src="https://www.bithound.io/github/beloader-animations/beloader-animations/badges/score.svg" alt="bitHound Overall Score"></a>
+<a href="https://www.bithound.io/github/beloader-animations/beloader-animations"><img src="https://www.bithound.io/github/beloader-animations/beloader-animations/badges/code.svg" alt="bitHound Code"></a>
+<a href="https://www.bithound.io/github/beloader-animations/beloader-animations/master/dependencies/npm"><img src="https://www.bithound.io/github/beloader-animations/beloader-animations/badges/dependencies.svg" alt="bitHound Dependencies"></a>
+<a href="https://www.bithound.io/github/beloader-animations/beloader-animations/master/dependencies/npm"><img src="https://www.bithound.io/github/beloader-animations/beloader-animations/badges/devDependencies.svg" alt="bitHound Dev Dependencies"></a>
+<a href="https://snyk.io/test/github/beloader-animations/beloader-animations?targetFile=package.json"><img src="https://snyk.io/test/github/beloader-animations/beloader-animations/badge.svg?targetFile=package.json" alt="Known Vulnerabilities"></a></p>
+<p></p><p><a href="https://liqueurdetoile.com" target="\_blank"><img src="https://hosting.liqueurdetoile.com/logo_lqdt.png"></a></p>
+
+<p></p>
+<h1 id="beloader-animations">beloader-animations</h1><p>Beloader animations is a plugin for Beloader.</p>
+<p>It loads <a href="https://github.com/liqueurdetoile/elementify">Elementify</a> for easy DOM
+mangagement and bundles the great
+<a href="https://github.com/juliangarnier/anime">anime.js</a> from Julian Garnier to support
+custom animations.</p>
+<p>It provides some presets for displaying animated blocks, anime background colors...</p>
+<h2 id="installation">Installation</h2><h3 id="in-browser">In browser</h3><p>For usage in browser, no installation is required. Simply load plugin with <a href="https://beloader.github.io/beloader/manual/plugins.html">Beloader</a>.</p>
+<p>That example will load Beloader from CDN, then load plugin and font and finally display animated block
+and loading message without FOUT effect.</p>
+<pre><code class="lang-html"><code class="source-code prettyprint">&lt;html&gt;
+&lt;head&gt;Animation Beloader plugin Example&lt;/head&gt;
+&lt;body style=&quot;background-color:#000&quot;&gt;
+  &lt;style&gt;
+    .loading {
+      font-family: &apos;Droid Sans&apos;;
+      font-size: 2em;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 2em;
+      text-transform: uppercase
+    }
+  &lt;/style&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/beloader@latest/dist/beloader.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var loader = new Beloader({
+      defer: true
+    });
+
+    loader.fetch(&apos;plugin&apos;, {
+      name: &apos;animations&apos;,
+      url: &apos;https://cdn.rawgit.com/beloader/beloader-animations/2e01ef79/dist/beloader-animations.min.js&apos;
+    }).promise.then(function() {
+      var bgcolor = new this.animations.colors.BackgroundColor({
+        targets: &apos;body&apos;,
+        from: &apos;#000&apos;,
+        to: &apos;#09c&apos;
+      }).start();
+
+      var dots = new this.animations.blocks.ThreeDotsBouncing();
+
+      Q(&apos;body&apos;).style(&apos;backgroundColor&apos;, &apos;#000&apos;);
+      Q(&apos;body&apos;).append(dots.block);
+      dots.block.width = &apos;30%&apos;;
+      dots.start();
+    },
+    (err) =&gt; console.log(err));
+
+    loader.fetch(&apos;font&apos;, {
+      webfont: {
+        google: {
+          families: [&apos;Droid Sans&apos;, &apos;Droid Serif&apos;]
+        }
+      }
+    }).promise.then(function(item) {
+      Q(&apos;body&apos;).append(&apos;&lt;div class=&quot;loading&quot;&gt;Loading in progress&lt;/div&gt;&apos;);
+    });
+  &lt;/script&gt;
+&lt;/body&gt;</code>
+</code></pre>
+<p>See a demo of this example : <a href="https://cdn.rawgit.com/beloader/beloader-animations/94619414/demos/example.html">https://cdn.rawgit.com/beloader/beloader-animations/94619414/demos/example.html</a></p>
+<h3 id="as-module">As module</h3><p>As Beloader, beloader-animations is available as UMD to be embedded in wider app. Simply install it :</p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
