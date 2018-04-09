@@ -15,6 +15,8 @@
 
 <p align="center"><a href="https://liqueurdetoile.com" target="\_blank"><img src="https://hosting.liqueurdetoile.com/logo_lqdt.png" alt="Liqueur de Toile"></a></p>
 
+__Warning : This plugin is not yet functional__
+
 # beloader-animations
 Beloader animations is a plugin for Beloader.
 
