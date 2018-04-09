@@ -1,17 +1,17 @@
 [![NPM](https://nodei.co/npm/beloader-animations.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/beloader-animations)
 
-[![GitHub release](https://img.shields.io/github/release/beloader-animations/beloader-animations.svg)](https://github.com/beloader-animations/beloader-animations)
+[![GitHub release](https://img.shields.io/github/release/.svg)](https://github.com/beloader/beloader-animations)
 [![Gzip size](http://img.badgesize.io/https://cdn.jsdelivr.net/npm/beloader-animations@latest?compression=gzip&style=flat-square)](https://cdn.jsdelivr.net/npm/beloader-animations@latest)
-[![Build Status](https://travis-ci.org/beloader-animations/beloader-animations.svg?branch=master)](https://travis-ci.org/beloader-animations/beloader-animations)
-[![Coverage Status](https://coveralls.io/repos/github/beloader-animations/beloader-animations/badge.svg?branch=master)](https://coveralls.io/github/beloader-animations/beloader-animations?branch=master)
+[![Build Status](https://travis-ci.org/beloader/beloader-animations.svg?branch=master)](https://travis-ci.org/beloader/beloader-animations)
+[![Coverage Status](https://coveralls.io/repos/github/beloader/beloader-animations/badge.svg?branch=master)](https://coveralls.io/github/beloader/beloader-animations?branch=master)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Documentation](https://beloader-animations.github.io/beloader-animations/badge.svg)](https://beloader-animations.github.io/beloader-animations/)
 
-[![bitHound Overall Score](https://www.bithound.io/github/beloader-animations/beloader-animations/badges/score.svg)](https://www.bithound.io/github/beloader-animations/beloader-animations)
-[![bitHound Code](https://www.bithound.io/github/beloader-animations/beloader-animations/badges/code.svg)](https://www.bithound.io/github/beloader-animations/beloader-animations)
-[![bitHound Dependencies](https://www.bithound.io/github/beloader-animations/beloader-animations/badges/dependencies.svg)](https://www.bithound.io/github/beloader-animations/beloader-animations/master/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/github/beloader-animations/beloader-animations/badges/devDependencies.svg)](https://www.bithound.io/github/beloader-animations/beloader-animations/master/dependencies/npm)
-[![Known Vulnerabilities](https://snyk.io/test/github/beloader-animations/beloader-animations/badge.svg?targetFile=package.json)](https://snyk.io/test/github/beloader-animations/beloader-animations?targetFile=package.json)
+[![bitHound Overall Score](https://www.bithound.io/github/beloader/beloader-animations/badges/score.svg)](https://www.bithound.io/github/beloader/beloader-animations)
+[![bitHound Code](https://www.bithound.io/github/beloader/beloader-animations/badges/code.svg)](https://www.bithound.io/github/beloader/beloader-animations)
+[![bitHound Dependencies](https://www.bithound.io/github/beloader/beloader-animations/badges/dependencies.svg)](https://www.bithound.io/github/beloader/beloader-animations/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/beloader/beloader-animations/badges/devDependencies.svg)](https://www.bithound.io/github/beloader/beloader-animations/master/dependencies/npm)
+[![Known Vulnerabilities](https://snyk.io/test/github/beloader/beloader-animations/badge.svg?targetFile=package.json)](https://snyk.io/test/github/beloader/beloader-animations?targetFile=package.json)
 
 <p align="center"><a href="https://liqueurdetoile.com" target="\_blank"><img src="https://hosting.liqueurdetoile.com/logo_lqdt.png" alt="Liqueur de Toile"></a></p>
 
