@@ -3,7 +3,9 @@ const path = require('path');
 module.exports = {
   entry: './src/beloader-animations.js',
   output: {
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    library: 'animations',
+    libraryExport: 'default'
   },
   externals: {
     anime: 'anime',

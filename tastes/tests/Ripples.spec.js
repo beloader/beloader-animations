@@ -7,16 +7,14 @@ import animations from 'beloader-animations';
 describe('Ripples', function () {
   this.timeout(5000);
 
-  it('should load Ripples', function (done) {
-    let a = loader.pluginize('animations', animations);
+  window.before(function () {
+    return loader.pluginize('animations', animations).promise;
+  });
 
-    a.promise.then(() => {
-      loader.animations.load('Ripples').then(a => {
-        Ripples = a;
-
-        a.name.should.equal('Ripples');
-        done();
-      });
+  it('should load Ripples', function () {
+    return loader.animations.load('Ripples').then(a => {
+      Ripples = a;
+      a.name.should.equal('Ripples');
     });
   });
 

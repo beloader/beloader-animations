@@ -4,18 +4,17 @@ var BackgroundColor;
 
 import animations from 'beloader-animations';
 
-describe.skip('BackgroundColor', function () {
+describe('BackgroundColor', function () {
   this.timeout(5000);
 
-  it('should load BackgroundColor', function (done) {
-    let a = loader.pluginize('animations', animations);
+  window.before(function () {
+    return loader.pluginize('animations', animations).promise;
+  });
 
-    a.promise.then(() => {
-      loader.animations.load('BackgroundColor').then(a => {
-        BackgroundColor = a;
-        a.name.should.equal('BackgroundColor');
-        done();
-      });
+  it('should load BackgroundColor', function () {
+    return loader.animations.load('BackgroundColor').then(a => {
+      BackgroundColor = a;
+      a.name.should.equal('BackgroundColor');
     });
   });
 

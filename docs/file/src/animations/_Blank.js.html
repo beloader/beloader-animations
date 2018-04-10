@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">tests/Ripples.spec.js | BeLoader | Highly customizable and lightweight loader based on dynamic imports with splash screen, animated blocks and more</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/animations/_Blank.js | BeLoader | Highly customizable and lightweight loader based on dynamic imports with splash screen, animated blocks and more</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -41,54 +41,43 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">tests/Ripples.spec.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const Beloader = window.Beloader;
-const loader = new Beloader();
-var Ripples;
+<div class="content" data-ice="content"><h1 data-ice="title">src/animations/_Blank.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+*  @file _blank.js
+*  @author Liqueur de Toile &lt;contact@liqueurdetoile.com&gt;
+*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}
+*/
 
-import animations from &apos;beloader-animations&apos;;
+const anime = window.anime; //eslint-disable-line
+const Q = window.elementify.Q; //eslint-disable-line
 
-describe(&apos;Ripples&apos;, function () {
-  this.timeout(5000);
+import AbstractAnimation from &apos;core/AbstractAnimation&apos;;
 
-  window.before(function () {
-    return loader.pluginize(&apos;animations&apos;, animations).promise;
-  });
+/**
+ * _Blank is the pattern class for creating animations
+ *
+ * @version 1.0.0
+ * @since 1.0.0
+ * @author Liqueur de Toile &lt;contact@liqueurdetoile.com&gt;
+ * @extends {AbstractAnimation}
+ */
+export default class _Blank extends AbstractAnimation {
+  /**
+   * Initialize an instance
+   * @param {Object} [options={}] Options for animation
+   */
+  constructor(options = {}) {
+    super(options);
+  }
 
-  it(&apos;should load Ripples&apos;, function () {
-    return loader.animations.load(&apos;Ripples&apos;).then(a =&gt; {
-      Ripples = a;
-      a.name.should.equal(&apos;Ripples&apos;);
-    });
-  });
-
-  it(&apos;should run Ripples without options&apos;, function () {
-    let a = new Ripples();
-
-    this.timeout(6000);
-    a.block.node.nodeName.should.equal(&apos;DIV&apos;);
-    a.start();
-    return a.animation.finished.then(() =&gt; {
-      a.animation.completed.should.be.true;
-    });
-  });
-
-  it(&apos;should run Ripples with options&apos;, function () {
-    let a = new Ripples({
-      duration: 500,
-      ripples: {
-        count: 1
-      }
-    });
-
-    this.timeout(1000);
-    a.block.node.nodeName.should.equal(&apos;DIV&apos;);
-    a.start();
-    return a.animation.finished.then(() =&gt; {
-      a.animation.completed.should.be.true;
-    });
-  });
-});
+  /**
+   * Start the animation
+   * @return {this} Chainable
+   */
+  start() {
+    return this;
+  }
+}
 </code></pre>
 
 </div>

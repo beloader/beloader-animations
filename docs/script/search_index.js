@@ -24,6 +24,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "beloader-animations/src/animations/_blank.js~_blank",
+    "class/src/animations/_Blank.js~_Blank.html",
+    "<span>_Blank</span> <span class=\"search-result-import-path\">beloader-animations/src/animations/_Blank.js</span>",
+    "class"
+  ],
+  [
     "beloader-animations/src/beloader-animations.js~animations",
     "variable/index.html#static-variable-animations",
     "<span>animations</span> <span class=\"search-result-import-path\">beloader-animations/src/beloader-animations.js</span>",
@@ -31,32 +37,56 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber64",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber62",
     "AbstractAnimation",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber90",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber88",
     "AbstractAnimation should check option as array",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber79",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber77",
     "AbstractAnimation should check option as string",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber65",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber63",
     "AbstractAnimation should create an instance",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber71",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber69",
     "AbstractAnimation should store options",
+    "test"
+  ],
+  [
+    "",
+    "test-file/tests/BackgroundColor.spec.js.html#lineNumber7",
+    "BackgroundColor",
+    "test"
+  ],
+  [
+    "",
+    "test-file/tests/BackgroundColor.spec.js.html#lineNumber14",
+    "BackgroundColor should load BackgroundColor",
+    "test"
+  ],
+  [
+    "",
+    "test-file/tests/BackgroundColor.spec.js.html#lineNumber21",
+    "BackgroundColor should start animation",
+    "test"
+  ],
+  [
+    "",
+    "test-file/tests/BackgroundColor.spec.js.html#lineNumber34",
+    "BackgroundColor should throw exception",
     "test"
   ],
   [
@@ -67,25 +97,25 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber39",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber37",
     "Main loader should fail loading animation and return promise",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber55",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber53",
     "Main loader should fail loading animation and run failure callback",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber30",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber28",
     "Main loader should load animation and return promise",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber46",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber44",
     "Main loader should load animation and run callback",
     "test"
   ],
@@ -97,7 +127,7 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber19",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber17",
     "Main loader should not load dependencies",
     "test"
   ],
@@ -109,19 +139,19 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/tests/Ripples.spec.js.html#lineNumber10",
+    "test-file/tests/Ripples.spec.js.html#lineNumber14",
     "Ripples should load Ripples",
     "test"
   ],
   [
     "",
-    "test-file/tests/Ripples.spec.js.html#lineNumber34",
+    "test-file/tests/Ripples.spec.js.html#lineNumber32",
     "Ripples should run Ripples with options",
     "test"
   ],
   [
     "",
-    "test-file/tests/Ripples.spec.js.html#lineNumber23",
+    "test-file/tests/Ripples.spec.js.html#lineNumber21",
     "Ripples should run Ripples without options",
     "test"
   ],
@@ -133,32 +163,14 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/tests/ThreeDotsBouncing.spec.js.html#lineNumber10",
+    "test-file/tests/ThreeDotsBouncing.spec.js.html#lineNumber14",
     "ThreeDotsBouncing should load ThreeDotsBouncing",
     "test"
   ],
   [
     "",
-    "test-file/tests/ThreeDotsBouncing.spec.js.html#lineNumber22",
+    "test-file/tests/ThreeDotsBouncing.spec.js.html#lineNumber21",
     "ThreeDotsBouncing should run ThreeDotsBouncing with options",
-    "test"
-  ],
-  [
-    "",
-    "test-file/tests/BackgroundColor.spec.js.html#lineNumber10",
-    "should load BackgroundColor",
-    "test"
-  ],
-  [
-    "",
-    "test-file/tests/BackgroundColor.spec.js.html#lineNumber22",
-    "should start animation",
-    "test"
-  ],
-  [
-    "",
-    "test-file/tests/BackgroundColor.spec.js.html#lineNumber35",
-    "should throw exception",
     "test"
   ],
   [
@@ -549,6 +561,24 @@ window.esdocSearchIndex = [
     "src/animations/threedotsbouncing.js~threedotsbouncing#start",
     "class/src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing.html#instance-method-start",
     "src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing#start",
+    "method"
+  ],
+  [
+    "src/animations/_blank.js",
+    "file/src/animations/_Blank.js.html",
+    "src/animations/_Blank.js",
+    "file"
+  ],
+  [
+    "src/animations/_blank.js~_blank#constructor",
+    "class/src/animations/_Blank.js~_Blank.html#instance-constructor-constructor",
+    "src/animations/_Blank.js~_Blank#constructor",
+    "method"
+  ],
+  [
+    "src/animations/_blank.js~_blank#start",
+    "class/src/animations/_Blank.js~_Blank.html#instance-method-start",
+    "src/animations/_Blank.js~_Blank#start",
     "method"
   ],
   [

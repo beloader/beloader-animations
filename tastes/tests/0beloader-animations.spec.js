@@ -8,9 +8,7 @@ describe('Main loader', function () {
   this.timeout(10000);
 
   it('should load dependencies', function () {
-    let a = loader.pluginize('animations', animations);
-
-    return a.promise.then(() => {
+    loader.pluginize('animations', animations).promise.then(() => {
       window.elementify.should.be.an('object');
       window.anime.should.be.a('function');
     });

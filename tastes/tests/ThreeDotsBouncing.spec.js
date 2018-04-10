@@ -7,15 +7,14 @@ import animations from 'beloader-animations';
 describe('ThreeDotsBouncing', function () {
   this.timeout(5000);
 
-  it('should load ThreeDotsBouncing', function (done) {
-    let a = loader.pluginize('animations', animations);
+  window.before(function () {
+    return loader.pluginize('animations', animations).promise;
+  });
 
-    a.promise.then(() => {
-      loader.animations.load('ThreeDotsBouncing').then(a => {
-        ThreeDotsBouncing = a;
-        a.name.should.equal('ThreeDotsBouncing');
-        done();
-      });
+  it('should load ThreeDotsBouncing', function () {
+    return loader.animations.load('ThreeDotsBouncing').then(a => {
+      ThreeDotsBouncing = a;
+      a.name.should.equal('ThreeDotsBouncing');
     });
   });
 

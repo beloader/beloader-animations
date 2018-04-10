@@ -1,7 +1,7 @@
 {
-  "coverage": "76.47%",
-  "expectCount": 34,
-  "actualCount": 26,
+  "coverage": "76.92%",
+  "expectCount": 39,
+  "actualCount": 30,
   "files": {
     "src/animations/BackgroundColor.js": {
       "expectCount": 6,
@@ -26,6 +26,13 @@
         8,
         78,
         158
+      ]
+    },
+    "src/animations/_Blank.js": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        8
       ]
     },
     "src/beloader-animations.js": {

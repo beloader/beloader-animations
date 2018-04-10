@@ -33,6 +33,7 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#animations">animations</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/animations/BackgroundColor.js~BackgroundColor.html">BackgroundColor</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/animations/Ripples.js~Ripples.html">Ripples</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/animations/ThreeDotsBouncing.js~ThreeDotsBouncing.html">ThreeDotsBouncing</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/animations/_Blank.js~_Blank.html">_Blank</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core">core</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core/AbstractAnimation.js~AbstractAnimation.html">AbstractAnimation</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#typedefs">typedefs</a><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://liqueurdetoile.github.io/DotObjectArray">DotObjectArray</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/juliangarnier/anime#timeline">Timeline</a></span></span></li>
@@ -50,15 +51,14 @@ import animations from &apos;beloader-animations&apos;;
 describe(&apos;ThreeDotsBouncing&apos;, function () {
   this.timeout(5000);
 
-  it(&apos;should load ThreeDotsBouncing&apos;, function (done) {
-    let a = loader.pluginize(&apos;animations&apos;, animations);
+  window.before(function () {
+    return loader.pluginize(&apos;animations&apos;, animations).promise;
+  });
 
-    a.promise.then(() =&gt; {
-      loader.animations.load(&apos;ThreeDotsBouncing&apos;).then(a =&gt; {
-        ThreeDotsBouncing = a;
-        a.name.should.equal(&apos;ThreeDotsBouncing&apos;);
-        done();
-      });
+  it(&apos;should load ThreeDotsBouncing&apos;, function () {
+    return loader.animations.load(&apos;ThreeDotsBouncing&apos;).then(a =&gt; {
+      ThreeDotsBouncing = a;
+      a.name.should.equal(&apos;ThreeDotsBouncing&apos;);
     });
   });
 
