@@ -25,6 +25,7 @@ export const animations = {
       }).promise;
     } else animejs = new Promise((resolve, reject) => { resolve();});
 
+    console.log(this);
     this.promise = Promise.all([elementify, animejs]);
 
     return this;
