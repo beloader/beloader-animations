@@ -25,9 +25,9 @@ export const animations = {
       }).promise;
     } else animejs = new Promise((resolve, reject) => { resolve();});
 
-    this.promise = Promise.all([elementify, animejs]);
+    animations.promise = Promise.all([elementify, animejs]);
 
-    return this;
+    return animations;
   },
 
   load: function (animation, success = null, failure = null) {
