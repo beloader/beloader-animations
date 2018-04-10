@@ -7,6 +7,8 @@
 import 'core/publicpath';
 
 export const animations = {
+  promise: undefined,
+
   init: function (options = {}) {
     let elementify, animejs;
 
