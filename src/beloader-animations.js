@@ -7,8 +7,6 @@
 import 'core/publicpath';
 
 export const animations = {
-  promise: undefined,
-
   init: function (options = {}) {
     let elementify, animejs;
 
@@ -27,9 +25,9 @@ export const animations = {
       }).promise;
     } else animejs = new Promise((resolve, reject) => { resolve();});
 
-    animations.promise = Promise.all([elementify, animejs]);
+    this.promise = Promise.all([elementify, animejs]);
 
-    return animations;
+    return this;
   },
 
   load: function (animation, success = null, failure = null) {
