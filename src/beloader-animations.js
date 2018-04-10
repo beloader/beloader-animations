@@ -14,14 +14,16 @@ export const animations = {
     if (!window.elementify && options.elementify !== false) {
       elementify = this.parent.fetch('script', {
         id: 'elementify',
-        url: options.elementify || 'https://unpkg.com/elementify@latest'
+        url: options.elementify || 'https://unpkg.com/elementify@latest',
+        defer: false
       }).promise;
     } else elementify = new Promise((resolve, reject) => { resolve();});
 
     if (!window.anime && options.anime !== false) {
       animejs = this.parent.fetch('script', {
         id: 'anime',
-        url: options.anime || 'https://unpkg.com/animejs@latest'
+        url: options.anime || 'https://unpkg.com/animejs@latest',
+        defer: false
       }).promise;
     } else animejs = new Promise((resolve, reject) => { resolve();});
 
