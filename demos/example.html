@@ -15,10 +15,12 @@
     }
   </style>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/beloader@latest/dist/beloader.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/beloader@latest"></script>
 
   <script type="text/javascript">
-    var loader = new Beloader();
+    var loader = new Beloader({
+      defer: true
+    });
 
     loader.fetch('plugin', {
       id: 'animations',
@@ -47,14 +49,14 @@
     });
 
     loader.fetch('font', {
-      awaiting: 'elementify',
+      //awaiting: 'elementify',
       webfont: {
         google: {
           families: ['Droid Sans', 'Droid Serif']
         }
       }
     }).promise.then(function(item) {
-      elementify.Q('body').append('<div class="loading">Loading in progress</div>');
+      elementify.Q('body').prepend('<div class="loading">Loading in progress</div>');
     });
   </script>
 </body>
