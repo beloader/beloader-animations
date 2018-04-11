@@ -19,7 +19,6 @@ import AbstractAnimation from 'core/AbstractAnimation';
  * @since 1.0.0
  * @author Liqueur de Toile <contact@liqueurdetoile.com>
  * @extends {AbstractAnimation}
- * @todo Add array and function support to some parameters
  */
 export default class Ripples extends AbstractAnimation {
   /**
