@@ -36,32 +36,38 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "beloader-animations/src/core/publicpath.js~check",
+    "function/index.html#static-function-check",
+    "<span>check</span> <span class=\"search-result-import-path\">beloader-animations/src/core/publicpath.js</span>",
+    "function"
+  ],
+  [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber62",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber64",
     "AbstractAnimation",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber88",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber90",
     "AbstractAnimation should check option as array",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber77",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber79",
     "AbstractAnimation should check option as string",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber63",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber65",
     "AbstractAnimation should create an instance",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber69",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber71",
     "AbstractAnimation should store options",
     "test"
   ],
@@ -97,25 +103,25 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber37",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber39",
     "Main loader should fail loading animation and return promise",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber53",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber55",
     "Main loader should fail loading animation and run failure callback",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber28",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber30",
     "Main loader should load animation and return promise",
     "test"
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber44",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber46",
     "Main loader should load animation and run callback",
     "test"
   ],
@@ -127,7 +133,7 @@ window.esdocSearchIndex = [
   ],
   [
     "",
-    "test-file/tests/0beloader-animations.spec.js.html#lineNumber17",
+    "test-file/tests/0beloader-animations.spec.js.html#lineNumber19",
     "Main loader should not load dependencies",
     "test"
   ],

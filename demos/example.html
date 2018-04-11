@@ -15,7 +15,7 @@
     }
   </style>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/beloader@latest"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/beloader@1.5.1"></script>
 
   <script type="text/javascript">
     var loader = new Beloader({
@@ -26,8 +26,7 @@
       id: 'animations',
       name: 'animations',
       //url: 'https://cdn.rawgit.com/beloader/beloader-animations/ffa73da1/dist/beloader-animations.min.js'
-      url: 'https://rawgit.com/beloader/beloader-animations/dev/dist/beloader-animations.min.js',
-      async: false
+      url: 'https://rawgit.com/beloader/beloader-animations/dev/dist/beloader-animations.min.js'
     }).promise.then(function() {
       elementify.load();
       loader.animations.load('BackgroundColor', function(BackgroundColor) {
