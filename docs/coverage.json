@@ -1,6 +1,6 @@
 {
-  "coverage": "76.92%",
-  "expectCount": 39,
+  "coverage": "75%",
+  "expectCount": 40,
   "actualCount": 30,
   "files": {
     "src/animations/BackgroundColor.js": {
@@ -48,9 +48,11 @@
       "undocumentLines": []
     },
     "src/core/publicpath.js": {
-      "expectCount": 2,
+      "expectCount": 3,
       "actualCount": 2,
-      "undocumentLines": []
+      "undocumentLines": [
+        20
+      ]
     }
   }
 }

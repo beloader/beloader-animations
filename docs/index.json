@@ -1751,7 +1751,7 @@
     "__docId__": 82,
     "kind": "file",
     "name": "src/beloader-animations.js",
-    "content": "/**\n*  @file beloader-animations.js\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}\n*/\n\nimport 'core/publicpath';\n\nexport const animations = {\n  init: function (options = {}) {\n    let elementify, animejs;\n\n    // Load elementify and anime if needed\n    if (!window.elementify && options.elementify !== false) {\n      elementify = this.parent.fetch('script', {\n        id: 'elementify',\n        url: options.elementify || 'https://unpkg.com/elementify@latest'\n      }).promise;\n    } else elementify = new Promise((resolve, reject) => { resolve();});\n\n    if (!window.anime && options.anime !== false) {\n      animejs = this.parent.fetch('script', {\n        id: 'anime',\n        url: options.anime || 'https://unpkg.com/animejs@latest'\n      }).promise;\n    } else animejs = new Promise((resolve, reject) => { resolve();});\n\n    this.promise = Promise.all([elementify, animejs]);\n\n    return this;\n  },\n\n  load: function (animation, success = null, failure = null) {\n    let p = import(\n      /* webpackChunkName: \"[request]\" */\n      `animations/${animation}`\n    );\n\n    return new Promise((resolve, reject) => {\n      p.then(\n        a => {\n          if (success instanceof Function) success(a.default);\n          resolve(a.default);\n        },\n        e => {\n          if (failure instanceof Function) failure(e);\n          reject(e);\n        }\n      );\n    });\n  }\n};\n\nexport default animations;\n",
+    "content": "/**\n*  @file beloader-animations.js\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}\n*/\n\nimport 'core/publicpath';\n\nexport const animations = {\n  init: function (options = {}) {\n    let elementify, animejs;\n\n    // Load elementify and anime if needed\n    if (!window.elementify && options.elementify !== false) {\n      elementify = this.parent.fetch('script', {\n        id: 'elementify',\n        url: options.elementify || 'https://unpkg.com/elementify@latest',\n        defer: false\n      }).promise;\n    } else elementify = new Promise((resolve, reject) => { resolve();});\n\n    if (!window.anime && options.anime !== false) {\n      animejs = this.parent.fetch('script', {\n        id: 'anime',\n        url: options.anime || 'https://unpkg.com/animejs@latest',\n        defer: false\n      }).promise;\n    } else animejs = new Promise((resolve, reject) => { resolve();});\n\n    this.promise = Promise.all([elementify, animejs]);\n    return this;\n  },\n\n  load: function (animation, success = null, failure = null) {\n    let p = import(\n      /* webpackChunkName: \"[request]\" */\n      `animations/${animation}`\n    );\n\n    return new Promise((resolve, reject) => {\n      p.then(\n        a => {\n          if (success instanceof Function) success(a.default);\n          resolve(a.default);\n        },\n        e => {\n          if (failure instanceof Function) failure(e);\n          reject(e);\n        }\n      );\n    });\n  }\n};\n\nexport default animations;\n",
     "static": true,
     "longname": "F:/Projets/beloader-plugins/beloader-animations/src/beloader-animations.js",
     "access": "public",
@@ -1973,7 +1973,7 @@
     "__docId__": 92,
     "kind": "file",
     "name": "src/core/publicpath.js",
-    "content": "/**\n*  @file publicpath.js\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader-animations/blob/master/LICENSE}\n*/\n\n/**\n*  This script initialize webpack public path for CDN usage compatibility\n*\n*  @version 1.0.0\n*  @since 1.0.0\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*/\n\nlet scripts = document.getElementsByTagName('script');\n/** @ignore */\nlet r = new RegExp('^(?:[a-z]+:)?//', 'i');\n\nfor (let i = 0; i < scripts.length; i++) {\n  let script = scripts[i];\n  let tmp = script.src.match(/(.+)beloader-animations/);\n\n  // Only set public path if beloader path is absolute\n  if (tmp && tmp[1] && r.test(tmp[1])) __webpack_public_path__ = tmp[1]; // eslint-disable-line\n}\n",
+    "content": "/**\n*  @file publicpath.js\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*  @licence AGPL-3.0 {@link https://github.com/liqueurdetoile/beloader/blob/master/LICENSE}\n*/\n\n/**\n*  This script initialize webpack public path for CDN usage compatibility\n*\n*  @version 1.0.0\n*  @since 1.0.0\n*  @author Liqueur de Toile <contact@liqueurdetoile.com>\n*/\n\nlet scripts = document.getElementsByTagName('script');\n/** @ignore */\nlet r = new RegExp('^(?:[a-z]+:)?//', 'i');\nlet wpp;\n\nexport function check(uri) {\n  // Dot not forget to change target string beloader\n  let tmp = uri.match(/((http.+)beloader-animations(?:[@\\.\\w]+|$))/);\n\n  // Only set public path if beloader path is absolute\n  if (tmp && tmp[1] && r.test(tmp[1])) {\n    if (tmp[1].indexOf('dist') >= 0) return tmp[2];\n    return tmp[1] + '/dist/';\n  }\n  return false;\n}\n\nfor (let i = 0; i < scripts.length; i++) {\n  wpp = check(scripts[i].src);\n\n  if (wpp) {\n    __webpack_public_path__ = wpp; // eslint-disable-line\n    break;\n  }\n}\n",
     "static": true,
     "longname": "F:/Projets/beloader-plugins/beloader-animations/src/core/publicpath.js",
     "access": "public",
@@ -2030,6 +2030,36 @@
   },
   {
     "__docId__": 95,
+    "kind": "function",
+    "name": "check",
+    "memberof": "src/core/publicpath.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/publicpath.js~check",
+    "access": "public",
+    "export": true,
+    "importPath": "beloader-animations/src/core/publicpath.js",
+    "importStyle": "{check}",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "params": [
+      {
+        "name": "uri",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
     "kind": "file",
     "name": "src/typedefs/typedefs.jsdoc",
     "content": "/**\r\n * @external {DotObjectArray} https://liqueurdetoile.github.io/DotObjectArray\r\n */\r\n\r\n/**\r\n * @external {Timeline} https://github.com/juliangarnier/anime#timeline\r\n */\r\n",
@@ -2040,7 +2070,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 96,
+    "__docId__": 97,
     "kind": "external",
     "name": "DotObjectArray",
     "externalLink": "https://liqueurdetoile.github.io/DotObjectArray",
@@ -2051,7 +2081,7 @@
     "description": ""
   },
   {
-    "__docId__": 97,
+    "__docId__": 98,
     "kind": "external",
     "name": "Timeline",
     "externalLink": "https://github.com/juliangarnier/anime#timeline",
@@ -2078,10 +2108,10 @@
     "access": "public"
   },
   {
-    "__docId__": 98,
+    "__docId__": 99,
     "kind": "testFile",
     "name": "tests/0beloader-animations.spec.js",
-    "content": "const Beloader = window.Beloader;\r\nconst loader = new Beloader();\r\n\nimport animations from 'beloader-animations';\r\nimport AbstractAnimation from 'core/AbstractAnimation';\r\n\r\ndescribe('Main loader', function () {\r\n  this.timeout(10000);\r\n\r\n  it('should load dependencies', function () {\r\n    loader.pluginize('animations', animations).promise.then(() => {\r\n      window.elementify.should.be.an('object');\r\n      window.anime.should.be.a('function');\r\n    });\r\n  });\r\n\r\n  it('should not load dependencies', function () {\r\n    let b = loader.pluginize('b', animations, {\r\n      elementify: false,\r\n      anime: false\r\n    });\r\n\r\n    return b.promise.then(() => {\r\n      expect(true).to.be.true;\r\n    });\r\n  });\r\n\r\n  it('should load animation and return promise', function (done) {\r\n    animations.load('Ripples').then(Ripples => {\r\n      let t = new Ripples();\r\n\r\n      t.block.node.nodeName.should.equal('DIV');\r\n      done();\r\n    });\r\n  });\r\n\r\n  it('should fail loading animation and return promise', function () {\r\n    return animations.load('Nothing')['catch'](error => {\r\n      console.log(error);\r\n      expect(true).to.be.true;\r\n    });\r\n  });\r\n\r\n  it('should load animation and run callback', function (done) {\r\n    animations.load('Ripples', function (Ripples) {\r\n      let t = new Ripples();\r\n\r\n      t.block.node.nodeName.should.equal('DIV');\r\n      done();\r\n    });\r\n  });\r\n\r\n  it('should fail loading animation and run failure callback', function (done) {\r\n    animations.load('Nothing', null, error => {\r\n      console.log(error);\r\n      expect(true).to.be.true;\r\n      done();\r\n    });\r\n  });\r\n});\r\n\r\ndescribe('AbstractAnimation', function () {\r\n  it('should create an instance', function () {\r\n    let a = new AbstractAnimation();\r\n\r\n    a.block.should.be.false;\r\n  });\r\n\r\n  it('should store options', function () {\r\n    let a = new AbstractAnimation({\r\n      duration: 1000\r\n    });\r\n\r\n    a.options.pull('duration').should.equal(1000);\r\n  });\r\n\r\n  it('should check option as string', function () {\r\n    let a = new AbstractAnimation({\r\n      duration: 1000,\r\n      fixture: false\r\n    });\r\n\r\n    a.check('duration').should.be.true;\r\n    a.check('fixture').should.be.true;\r\n    expect(a.check.bind(a, 'nothing')).to.throw(TypeError);\r\n  });\r\n\r\n  it('should check option as array', function () {\r\n    let a = new AbstractAnimation({\r\n      duration: 1000,\r\n      fixture: false\r\n    });\r\n\r\n    a.check(['duration']).should.be.true;\r\n    a.check(['duration', 'fixture']).should.be.true;\r\n  });\r\n});\r\n",
+    "content": "const Beloader = window.Beloader;\r\nconst loader = new Beloader();\r\n\nimport animations from 'beloader-animations';\r\nimport AbstractAnimation from 'core/AbstractAnimation';\r\n\r\ndescribe('Main loader', function () {\r\n  this.timeout(10000);\r\n\r\n  it('should load dependencies', function () {\r\n    let p = loader.pluginize('animations', animations);\r\n\r\n    p.promise.then(() => {\r\n      window.elementify.should.be.an('object');\r\n      window.anime.should.be.a('function');\r\n    });\r\n  });\r\n\r\n  it('should not load dependencies', function () {\r\n    let b = loader.pluginize('b', animations, {\r\n      elementify: false,\r\n      anime: false\r\n    });\r\n\r\n    return b.promise.then(() => {\r\n      expect(true).to.be.true;\r\n    });\r\n  });\r\n\r\n  it('should load animation and return promise', function (done) {\r\n    animations.load('Ripples').then(Ripples => {\r\n      let t = new Ripples();\r\n\r\n      t.block.node.nodeName.should.equal('DIV');\r\n      done();\r\n    });\r\n  });\r\n\r\n  it('should fail loading animation and return promise', function () {\r\n    return animations.load('Nothing')['catch'](error => {\r\n      console.log(error);\r\n      expect(true).to.be.true;\r\n    });\r\n  });\r\n\r\n  it('should load animation and run callback', function (done) {\r\n    animations.load('Ripples', function (Ripples) {\r\n      let t = new Ripples();\r\n\r\n      t.block.node.nodeName.should.equal('DIV');\r\n      done();\r\n    });\r\n  });\r\n\r\n  it('should fail loading animation and run failure callback', function (done) {\r\n    animations.load('Nothing', null, error => {\r\n      console.log(error);\r\n      expect(true).to.be.true;\r\n      done();\r\n    });\r\n  });\r\n});\r\n\r\ndescribe('AbstractAnimation', function () {\r\n  it('should create an instance', function () {\r\n    let a = new AbstractAnimation();\r\n\r\n    a.block.should.be.false;\r\n  });\r\n\r\n  it('should store options', function () {\r\n    let a = new AbstractAnimation({\r\n      duration: 1000\r\n    });\r\n\r\n    a.options.pull('duration').should.equal(1000);\r\n  });\r\n\r\n  it('should check option as string', function () {\r\n    let a = new AbstractAnimation({\r\n      duration: 1000,\r\n      fixture: false\r\n    });\r\n\r\n    a.check('duration').should.be.true;\r\n    a.check('fixture').should.be.true;\r\n    expect(a.check.bind(a, 'nothing')).to.throw(TypeError);\r\n  });\r\n\r\n  it('should check option as array', function () {\r\n    let a = new AbstractAnimation({\r\n      duration: 1000,\r\n      fixture: false\r\n    });\r\n\r\n    a.check(['duration']).should.be.true;\r\n    a.check(['duration', 'fixture']).should.be.true;\r\n  });\r\n});\r\n",
     "static": true,
     "longname": "F:/Projets/beloader-plugins/beloader-animations/tastes/tests/0beloader-animations.spec.js",
     "access": null,
@@ -2089,7 +2119,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 99,
+    "__docId__": 100,
     "kind": "test",
     "name": "describe0",
     "testId": 0,
@@ -2102,7 +2132,7 @@
     "lineNumber": 7
   },
   {
-    "__docId__": 100,
+    "__docId__": 101,
     "kind": "test",
     "name": "it1",
     "testId": 1,
@@ -2115,7 +2145,7 @@
     "lineNumber": 10
   },
   {
-    "__docId__": 101,
+    "__docId__": 102,
     "kind": "test",
     "name": "it2",
     "testId": 2,
@@ -2125,10 +2155,10 @@
     "longname": "tests/0beloader-animations.spec.js~describe0.it2",
     "access": null,
     "description": "should not load dependencies",
-    "lineNumber": 17
+    "lineNumber": 19
   },
   {
-    "__docId__": 102,
+    "__docId__": 103,
     "kind": "test",
     "name": "it3",
     "testId": 3,
@@ -2138,10 +2168,10 @@
     "longname": "tests/0beloader-animations.spec.js~describe0.it3",
     "access": null,
     "description": "should load animation and return promise",
-    "lineNumber": 28
+    "lineNumber": 30
   },
   {
-    "__docId__": 103,
+    "__docId__": 104,
     "kind": "test",
     "name": "it4",
     "testId": 4,
@@ -2151,10 +2181,10 @@
     "longname": "tests/0beloader-animations.spec.js~describe0.it4",
     "access": null,
     "description": "should fail loading animation and return promise",
-    "lineNumber": 37
+    "lineNumber": 39
   },
   {
-    "__docId__": 104,
+    "__docId__": 105,
     "kind": "test",
     "name": "it5",
     "testId": 5,
@@ -2164,10 +2194,10 @@
     "longname": "tests/0beloader-animations.spec.js~describe0.it5",
     "access": null,
     "description": "should load animation and run callback",
-    "lineNumber": 44
+    "lineNumber": 46
   },
   {
-    "__docId__": 105,
+    "__docId__": 106,
     "kind": "test",
     "name": "it6",
     "testId": 6,
@@ -2177,10 +2207,10 @@
     "longname": "tests/0beloader-animations.spec.js~describe0.it6",
     "access": null,
     "description": "should fail loading animation and run failure callback",
-    "lineNumber": 53
+    "lineNumber": 55
   },
   {
-    "__docId__": 106,
+    "__docId__": 107,
     "kind": "test",
     "name": "describe7",
     "testId": 7,
@@ -2190,10 +2220,10 @@
     "longname": "tests/0beloader-animations.spec.js~describe7",
     "access": null,
     "description": "AbstractAnimation",
-    "lineNumber": 62
+    "lineNumber": 64
   },
   {
-    "__docId__": 107,
+    "__docId__": 108,
     "kind": "test",
     "name": "it8",
     "testId": 8,
@@ -2203,10 +2233,10 @@
     "longname": "tests/0beloader-animations.spec.js~describe7.it8",
     "access": null,
     "description": "should create an instance",
-    "lineNumber": 63
+    "lineNumber": 65
   },
   {
-    "__docId__": 108,
+    "__docId__": 109,
     "kind": "test",
     "name": "it9",
     "testId": 9,
@@ -2216,10 +2246,10 @@
     "longname": "tests/0beloader-animations.spec.js~describe7.it9",
     "access": null,
     "description": "should store options",
-    "lineNumber": 69
+    "lineNumber": 71
   },
   {
-    "__docId__": 109,
+    "__docId__": 110,
     "kind": "test",
     "name": "it10",
     "testId": 10,
@@ -2229,10 +2259,10 @@
     "longname": "tests/0beloader-animations.spec.js~describe7.it10",
     "access": null,
     "description": "should check option as string",
-    "lineNumber": 77
+    "lineNumber": 79
   },
   {
-    "__docId__": 110,
+    "__docId__": 111,
     "kind": "test",
     "name": "it11",
     "testId": 11,
@@ -2242,10 +2272,10 @@
     "longname": "tests/0beloader-animations.spec.js~describe7.it11",
     "access": null,
     "description": "should check option as array",
-    "lineNumber": 88
+    "lineNumber": 90
   },
   {
-    "__docId__": 111,
+    "__docId__": 112,
     "kind": "testFile",
     "name": "tests/BackgroundColor.spec.js",
     "content": "const Beloader = window.Beloader;\r\nconst loader = new Beloader();\r\nvar BackgroundColor;\r\n\r\nimport animations from 'beloader-animations';\r\n\r\ndescribe('BackgroundColor', function () {\r\n  this.timeout(5000);\r\n\r\n  window.before(function () {\r\n    return loader.pluginize('animations', animations).promise;\r\n  });\r\n\r\n  it('should load BackgroundColor', function () {\r\n    return loader.animations.load('BackgroundColor').then(a => {\r\n      BackgroundColor = a;\r\n      a.name.should.equal('BackgroundColor');\r\n    });\r\n  });\r\n\r\n  it('should start animation', function () {\r\n    let div = window.elementify.Q('+div');\r\n    let c = new BackgroundColor({\r\n      targets: div.node,\r\n      from: '#000',\r\n      to: '#fff',\r\n      duration: 500\r\n    });\r\n\r\n    c.start();\r\n    c.should.be.instanceof(BackgroundColor);\r\n  });\r\n\r\n  it('should throw exception', function () {\r\n    expect(() => {new BackgroundColor();}).to.throw(TypeError); //eslint-disable-line\r\n  });\r\n});\r\n",
@@ -2256,7 +2286,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 112,
+    "__docId__": 113,
     "kind": "test",
     "name": "describe12",
     "testId": 12,
@@ -2269,7 +2299,7 @@
     "lineNumber": 7
   },
   {
-    "__docId__": 113,
+    "__docId__": 114,
     "kind": "test",
     "name": "it13",
     "testId": 13,
@@ -2282,7 +2312,7 @@
     "lineNumber": 14
   },
   {
-    "__docId__": 114,
+    "__docId__": 115,
     "kind": "test",
     "name": "it14",
     "testId": 14,
@@ -2295,7 +2325,7 @@
     "lineNumber": 21
   },
   {
-    "__docId__": 115,
+    "__docId__": 116,
     "kind": "test",
     "name": "it15",
     "testId": 15,
@@ -2308,7 +2338,7 @@
     "lineNumber": 34
   },
   {
-    "__docId__": 116,
+    "__docId__": 117,
     "kind": "testFile",
     "name": "tests/Ripples.spec.js",
     "content": "const Beloader = window.Beloader;\r\nconst loader = new Beloader();\r\nvar Ripples;\r\n\r\nimport animations from 'beloader-animations';\r\n\r\ndescribe('Ripples', function () {\r\n  this.timeout(5000);\r\n\r\n  window.before(function () {\r\n    return loader.pluginize('animations', animations).promise;\r\n  });\r\n\r\n  it('should load Ripples', function () {\r\n    return loader.animations.load('Ripples').then(a => {\r\n      Ripples = a;\r\n      a.name.should.equal('Ripples');\r\n    });\r\n  });\r\n\r\n  it('should run Ripples without options', function () {\r\n    let a = new Ripples();\r\n\r\n    this.timeout(6000);\r\n    a.block.node.nodeName.should.equal('DIV');\r\n    a.start();\r\n    return a.animation.finished.then(() => {\r\n      a.animation.completed.should.be.true;\r\n    });\r\n  });\r\n\r\n  it('should run Ripples with options', function () {\r\n    let a = new Ripples({\r\n      duration: 500,\r\n      ripples: {\r\n        count: 1\r\n      }\r\n    });\r\n\r\n    this.timeout(1000);\r\n    a.block.node.nodeName.should.equal('DIV');\r\n    a.start();\r\n    return a.animation.finished.then(() => {\r\n      a.animation.completed.should.be.true;\r\n    });\r\n  });\r\n});\r\n",
@@ -2319,7 +2349,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 117,
+    "__docId__": 118,
     "kind": "test",
     "name": "describe16",
     "testId": 16,
@@ -2332,7 +2362,7 @@
     "lineNumber": 7
   },
   {
-    "__docId__": 118,
+    "__docId__": 119,
     "kind": "test",
     "name": "it17",
     "testId": 17,
@@ -2345,7 +2375,7 @@
     "lineNumber": 14
   },
   {
-    "__docId__": 119,
+    "__docId__": 120,
     "kind": "test",
     "name": "it18",
     "testId": 18,
@@ -2358,7 +2388,7 @@
     "lineNumber": 21
   },
   {
-    "__docId__": 120,
+    "__docId__": 121,
     "kind": "test",
     "name": "it19",
     "testId": 19,
@@ -2371,7 +2401,7 @@
     "lineNumber": 32
   },
   {
-    "__docId__": 121,
+    "__docId__": 122,
     "kind": "testFile",
     "name": "tests/ThreeDotsBouncing.spec.js",
     "content": "const Beloader = window.Beloader;\r\nconst loader = new Beloader();\r\nvar ThreeDotsBouncing;\r\n\r\nimport animations from 'beloader-animations';\r\n\r\ndescribe('ThreeDotsBouncing', function () {\r\n  this.timeout(5000);\r\n\r\n  window.before(function () {\r\n    return loader.pluginize('animations', animations).promise;\r\n  });\r\n\r\n  it('should load ThreeDotsBouncing', function () {\r\n    return loader.animations.load('ThreeDotsBouncing').then(a => {\r\n      ThreeDotsBouncing = a;\r\n      a.name.should.equal('ThreeDotsBouncing');\r\n    });\r\n  });\r\n\r\n  it('should run ThreeDotsBouncing with options', function () {\r\n    let a = new ThreeDotsBouncing({\r\n      loop: false,\r\n      duration: 1000,\r\n      offset: 100\r\n    });\r\n\r\n    this.timeout(2000);\r\n    a.block.node.nodeName.should.equal('DIV');\r\n    a.start();\r\n    return a.animation.finished.then(() => {\r\n      a.animation.completed.should.be.true;\r\n    });\r\n  });\r\n});\r\n",
@@ -2382,7 +2412,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 122,
+    "__docId__": 123,
     "kind": "test",
     "name": "describe20",
     "testId": 20,
@@ -2395,7 +2425,7 @@
     "lineNumber": 7
   },
   {
-    "__docId__": 123,
+    "__docId__": 124,
     "kind": "test",
     "name": "it21",
     "testId": 21,
@@ -2408,7 +2438,7 @@
     "lineNumber": 14
   },
   {
-    "__docId__": 124,
+    "__docId__": 125,
     "kind": "test",
     "name": "it22",
     "testId": 22,

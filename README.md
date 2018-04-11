@@ -15,8 +15,6 @@
 
 <p align="center"><a href="https://liqueurdetoile.com" target="\_blank"><img src="https://hosting.liqueurdetoile.com/logo_lqdt.png" alt="Liqueur de Toile"></a></p>
 
-__Warning : This plugin is not yet functional__
-
 # beloader-animations
 Beloader animations is a plugin for Beloader.
 
@@ -36,7 +34,9 @@ That example will load Beloader from CDN, then load plugin and font and finally 
 
 ```html
 <html>
-<head>Animation Beloader plugin Example</head>
+<head>
+  <title>Animation Beloader plugin Example</title>
+</head>
 <body style="background-color:#000">
   <style>
     .loading {
@@ -49,41 +49,48 @@ That example will load Beloader from CDN, then load plugin and font and finally 
       text-transform: uppercase
     }
   </style>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/beloader@latest/dist/beloader.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/beloader@1.5.1"></script>
+
   <script type="text/javascript">
     var loader = new Beloader({
       defer: true
     });
 
     loader.fetch('plugin', {
+      id: 'animations',
       name: 'animations',
-      url: 'https://cdn.rawgit.com/beloader/beloader-animations/ffa73da1/dist/beloader-animations.min.js'
+      //url: 'https://cdn.rawgit.com/beloader/beloader-animations/ffa73da1/dist/beloader-animations.min.js'
+      url: 'https://rawgit.com/beloader/beloader-animations/dev/dist/beloader-animations.min.js'
     }).promise.then(function() {
-      this.animations.load('BackgroundColor', function(BackgroundColor) {
-        var a = new BackgroundColor({
+      elementify.load();
+      loader.animations.load('BackgroundColor', function(BackgroundColor) {
+        new BackgroundColor({
           targets: 'body',
           from: '#000',
           to: '#09c'
         }).start();
-     });
+      });
 
-      var dots = new this.animations.blocks.ThreeDotsBouncing();
+      loader.animations.load('ThreeDotsBouncing').then(function(ThreeDotsBouncing) {
+        var dots = new ThreeDotsBouncing();
 
-      Q('body').style('backgroundColor', '#000');
-      Q('body').append(dots.block);
-      dots.block.width = '30%';
-      dots.start();
-    },
-    (err) => console.log(err));
+        Q('body').style('backgroundColor', '#000');
+        Q('body').append(dots.block);
+        dots.block.width = '30%';
+        dots.start();
+      })
+    });
 
     loader.fetch('font', {
+      //awaiting: 'elementify',
       webfont: {
         google: {
           families: ['Droid Sans', 'Droid Serif']
         }
       }
     }).promise.then(function(item) {
-      Q('body').append('<div class="loading">Loading in progress</div>');
+      elementify.Q('body').prepend('<div class="loading">Loading in progress</div>');
     });
   </script>
 </body>
@@ -99,3 +106,6 @@ import 'ThreeDotsBouncing' from 'beloader-animations/dist/animations/ThreeDotsBo
 const ThreeDotsBouncing = require('beloader-animations/dist/animations/ThreeDotsBouncing').default;
 ```
 Each animation expect Elementify and Anime to be already loaded as externals.
+
+## Preset animations
+See [documentation](https://beloader.github.io/beloader-animations/) for details.

@@ -15,7 +15,7 @@
     }
   </style>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/beloader@latest/dist/beloader.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/beloader@1.5.1"></script>
 
   <script type="text/javascript">
     var loader = new Beloader({
@@ -23,12 +23,12 @@
     });
 
     loader.fetch('plugin', {
+      id: 'animations',
       name: 'animations',
       //url: 'https://cdn.rawgit.com/beloader/beloader-animations/ffa73da1/dist/beloader-animations.min.js'
-      url: 'https://rawgit.com/beloader/beloader-animations/master/dist/beloader-animations.min.js'
+      url: 'https://rawgit.com/beloader/beloader-animations/dev/dist/beloader-animations.min.js'
     }).promise.then(function() {
-      console.log(loader.animations);
-      //elementify.load();
+      elementify.load();
       loader.animations.load('BackgroundColor', function(BackgroundColor) {
         new BackgroundColor({
           targets: 'body',
@@ -48,13 +48,14 @@
     });
 
     loader.fetch('font', {
+      //awaiting: 'elementify',
       webfont: {
         google: {
           families: ['Droid Sans', 'Droid Serif']
         }
       }
     }).promise.then(function(item) {
-      Q('body').append('<div class="loading">Loading in progress</div>');
+      elementify.Q('body').prepend('<div class="loading">Loading in progress</div>');
     });
   </script>
 </body>
