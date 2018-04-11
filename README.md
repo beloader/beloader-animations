@@ -1,6 +1,6 @@
 [![NPM](https://nodei.co/npm/beloader-animations.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/beloader-animations)
 
-[![GitHub release](https://img.shields.io/github/release/.svg)](https://github.com/beloader/beloader-animations)
+[![GitHub release](https://img.shields.io/github/release/beloader/beloader-animations.svg)](https://github.com/beloader/beloader-animations)
 [![Gzip size](http://img.badgesize.io/https://cdn.jsdelivr.net/npm/beloader-animations@latest?compression=gzip&style=flat-square)](https://cdn.jsdelivr.net/npm/beloader-animations@latest)
 [![Build Status](https://travis-ci.org/beloader/beloader-animations.svg?branch=master)](https://travis-ci.org/beloader/beloader-animations)
 [![Coverage Status](https://coveralls.io/repos/github/beloader/beloader-animations/badge.svg?branch=master)](https://coveralls.io/github/beloader/beloader-animations?branch=master)
