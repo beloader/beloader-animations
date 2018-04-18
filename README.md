@@ -59,9 +59,8 @@ That example will load Beloader from CDN, then load plugin and font and finally 
 
     loader.fetch('plugin', {
       id: 'animations',
-      name: 'animations',
-      //url: 'https://cdn.rawgit.com/beloader/beloader-animations/ffa73da1/dist/beloader-animations.min.js'
-      url: 'https://rawgit.com/beloader/beloader-animations/dev/dist/beloader-animations.min.js'
+      name: 'animations',      
+      url: 'https://cdn.jsdelivr.net/npm/beloader-animations@latest'
     }).promise.then(function() {
       elementify.load();
       loader.animations.load('BackgroundColor', function(BackgroundColor) {
@@ -83,7 +82,6 @@ That example will load Beloader from CDN, then load plugin and font and finally 
     });
 
     loader.fetch('font', {
-      //awaiting: 'elementify',
       webfont: {
         google: {
           families: ['Droid Sans', 'Droid Serif']
