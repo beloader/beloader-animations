@@ -90,6 +90,6 @@
     "animejs": "^2.2.0",
     "dot-object-array": "^3.1.0",
     "elementify": "^1.2.0",
-    "uniqid": "^4.1.1"
+    "uniqid": "^5.0.0"
   }
 }

@@ -86,12 +86,12 @@ export default class ThreeDotsBouncing extends AbstractAnimation {
 
       dd.forEach((d, i) => {
         let line = Q('+div', {
-          class: 'tbd-line',
+          class: 'tdb-line',
           style: 'margin: 1em 0'
         });
 
         line.append(Q('+div', {
-          class: 'tbd-dot',
+          class: 'tdb-dot',
           style: {
             width: this.options.pull('dots.width'),
             height: this.options.pull('dots.height'),
@@ -141,7 +141,7 @@ export default class ThreeDotsBouncing extends AbstractAnimation {
     });
 
     timeline.add({
-      targets: `#${this.id} .tbd-dot`,
+      targets: `*#${this.id} .tdb-dot`,
       translateX: 0,
       rotate: 0,
       duration: function (target) {
