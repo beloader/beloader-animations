@@ -11,7 +11,7 @@
 [![bitHound Code](https://www.bithound.io/github/beloader/beloader-animations/badges/code.svg)](https://www.bithound.io/github/beloader/beloader-animations)
 [![bitHound Dependencies](https://www.bithound.io/github/beloader/beloader-animations/badges/dependencies.svg)](https://www.bithound.io/github/beloader/beloader-animations/master/dependencies/npm)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/beloader/beloader-animations/badges/devDependencies.svg)](https://www.bithound.io/github/beloader/beloader-animations/master/dependencies/npm)
-[![Known Vulnerabilities](https://snyk.io/test/github/beloader/beloader-animations/badge.svg?targetFile=package.json)](https://snyk.io/test/github/beloader/beloader-animations?targetFile=package.json)
+[![Known Vulnerabilities](https://snyk.io/test/github/beloader/beloader-animations/badge.svg?targetFile=package.json)](https://snyk.io/test/github/beloader/beloader-animations?targetFile=package.json) [![Greenkeeper badge](https://badges.greenkeeper.io/beloader/beloader-animations.svg)](https://greenkeeper.io/)
 
 <p align="center"><a href="https://liqueurdetoile.com" target="\_blank"><img src="https://hosting.liqueurdetoile.com/logo_lqdt.png" alt="Liqueur de Toile"></a></p>
 
